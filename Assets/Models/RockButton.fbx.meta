@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: aabd4afac515df045881484185b0837b
+timeCreated: 1473065452
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Button1
+    100002: Button2
+    100004: Button3
+    100006: Button4
+    100008: Button5
+    100010: ButtonPlan
+    100012: //RootNode
+    100014: RockButton:Button1
+    100016: RockButton:Button2
+    100018: RockButton:Button3
+    100020: RockButton:Button4
+    100022: RockButton:Button5
+    100024: RockButton:ButtonPlan
+    400000: Button1
+    400002: Button2
+    400004: Button3
+    400006: Button4
+    400008: Button5
+    400010: ButtonPlan
+    400012: //RootNode
+    400014: RockButton:Button1
+    400016: RockButton:Button2
+    400018: RockButton:Button3
+    400020: RockButton:Button4
+    400022: RockButton:Button5
+    400024: RockButton:ButtonPlan
+    2300000: Button1
+    2300002: Button2
+    2300004: Button3
+    2300006: Button4
+    2300008: Button5
+    2300010: ButtonPlan
+    2300012: RockButton:Button1
+    2300014: RockButton:Button2
+    2300016: RockButton:Button3
+    2300018: RockButton:Button4
+    2300020: RockButton:Button5
+    2300022: RockButton:ButtonPlan
+    3300000: Button1
+    3300002: Button2
+    3300004: Button3
+    3300006: Button4
+    3300008: Button5
+    3300010: ButtonPlan
+    3300012: RockButton:Button1
+    3300014: RockButton:Button2
+    3300016: RockButton:Button3
+    3300018: RockButton:Button4
+    3300020: RockButton:Button5
+    3300022: RockButton:ButtonPlan
+    4300000: ButtonPlan
+    4300002: Button1
+    4300004: Button2
+    4300006: Button3
+    4300008: Button4
+    4300010: Button5
+    4300012: RockButton:ButtonPlan
+    4300014: RockButton:Button1
+    4300016: RockButton:Button2
+    4300018: RockButton:Button3
+    4300020: RockButton:Button4
+    4300022: RockButton:Button5
+    7400000: Button1On
+    7400002: Button1Off
+    7400004: Button2On
+    7400006: Button2Off
+    7400008: Button3On
+    7400010: Button3Off
+    7400012: Button4On
+    7400014: Button4Off
+    7400016: Button5On
+    7400018: Button5Off
+    7400020: All
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Button1On
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button1Off
+      takeName: Take 001
+      firstFrame: 13
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button2On
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button2Off
+      takeName: Take 001
+      firstFrame: 38
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button3On
+      takeName: Take 001
+      firstFrame: 51
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button3Off
+      takeName: Take 001
+      firstFrame: 64
+      lastFrame: 76
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button4On
+      takeName: Take 001
+      firstFrame: 77
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button4Off
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 102
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button5On
+      takeName: Take 001
+      firstFrame: 103
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Button5Off
+      takeName: Take 001
+      firstFrame: 116
+      lastFrame: 128
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: All
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 128
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RockButton:Button1
+        weight: 1
+      - path: RockButton:Button2
+        weight: 1
+      - path: RockButton:Button3
+        weight: 1
+      - path: RockButton:Button4
+        weight: 1
+      - path: RockButton:Button5
+        weight: 1
+      - path: RockButton:ButtonPlan
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

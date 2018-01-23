@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 495d30a59cbf0a144841dabea0f0d34e
+timeCreated: 1487909232
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: enemy1:enemy
+    100004: enemy1:Head
+    100006: enemy1:HeadTop_End
+    100008: enemy1:Hips
+    100010: enemy1:LeftArm
+    100012: enemy1:LeftFoot
+    100014: enemy1:LeftForeArm
+    100016: enemy1:LeftHand
+    100018: enemy1:LeftHandIndex1
+    100020: enemy1:LeftHandIndex2
+    100022: enemy1:LeftHandIndex3
+    100024: enemy1:LeftHandIndex4
+    100026: enemy1:LeftHandMiddle1
+    100028: enemy1:LeftHandMiddle2
+    100030: enemy1:LeftHandMiddle3
+    100032: enemy1:LeftHandMiddle4
+    100034: enemy1:LeftHandPinky1
+    100036: enemy1:LeftHandPinky2
+    100038: enemy1:LeftHandPinky3
+    100040: enemy1:LeftHandPinky4
+    100042: enemy1:LeftHandRing1
+    100044: enemy1:LeftHandRing2
+    100046: enemy1:LeftHandRing3
+    100048: enemy1:LeftHandRing4
+    100050: enemy1:LeftHandThumb1
+    100052: enemy1:LeftHandThumb2
+    100054: enemy1:LeftHandThumb3
+    100056: enemy1:LeftHandThumb4
+    100058: enemy1:LeftLeg
+    100060: enemy1:LeftShoulder
+    100062: enemy1:LeftToe_End
+    100064: enemy1:LeftToeBase
+    100066: enemy1:LeftUpLeg
+    100068: enemy1:Neck
+    100070: enemy1:RightArm
+    100072: enemy1:RightFoot
+    100074: enemy1:RightForeArm
+    100076: enemy1:RightHand
+    100078: enemy1:RightHandIndex1
+    100080: enemy1:RightHandIndex2
+    100082: enemy1:RightHandIndex3
+    100084: enemy1:RightHandIndex4
+    100086: enemy1:RightHandMiddle1
+    100088: enemy1:RightHandMiddle2
+    100090: enemy1:RightHandMiddle3
+    100092: enemy1:RightHandMiddle4
+    100094: enemy1:RightHandPinky1
+    100096: enemy1:RightHandPinky2
+    100098: enemy1:RightHandPinky3
+    100100: enemy1:RightHandPinky4
+    100102: enemy1:RightHandRing1
+    100104: enemy1:RightHandRing2
+    100106: enemy1:RightHandRing3
+    100108: enemy1:RightHandRing4
+    100110: enemy1:RightHandThumb1
+    100112: enemy1:RightHandThumb2
+    100114: enemy1:RightHandThumb3
+    100116: enemy1:RightHandThumb4
+    100118: enemy1:RightLeg
+    100120: enemy1:RightShoulder
+    100122: enemy1:RightToe_End
+    100124: enemy1:RightToeBase
+    100126: enemy1:RightUpLeg
+    100128: enemy1:Spine
+    100130: enemy1:Spine1
+    100132: enemy1:Spine2
+    400000: //RootNode
+    400002: enemy1:enemy
+    400004: enemy1:Head
+    400006: enemy1:HeadTop_End
+    400008: enemy1:Hips
+    400010: enemy1:LeftArm
+    400012: enemy1:LeftFoot
+    400014: enemy1:LeftForeArm
+    400016: enemy1:LeftHand
+    400018: enemy1:LeftHandIndex1
+    400020: enemy1:LeftHandIndex2
+    400022: enemy1:LeftHandIndex3
+    400024: enemy1:LeftHandIndex4
+    400026: enemy1:LeftHandMiddle1
+    400028: enemy1:LeftHandMiddle2
+    400030: enemy1:LeftHandMiddle3
+    400032: enemy1:LeftHandMiddle4
+    400034: enemy1:LeftHandPinky1
+    400036: enemy1:LeftHandPinky2
+    400038: enemy1:LeftHandPinky3
+    400040: enemy1:LeftHandPinky4
+    400042: enemy1:LeftHandRing1
+    400044: enemy1:LeftHandRing2
+    400046: enemy1:LeftHandRing3
+    400048: enemy1:LeftHandRing4
+    400050: enemy1:LeftHandThumb1
+    400052: enemy1:LeftHandThumb2
+    400054: enemy1:LeftHandThumb3
+    400056: enemy1:LeftHandThumb4
+    400058: enemy1:LeftLeg
+    400060: enemy1:LeftShoulder
+    400062: enemy1:LeftToe_End
+    400064: enemy1:LeftToeBase
+    400066: enemy1:LeftUpLeg
+    400068: enemy1:Neck
+    400070: enemy1:RightArm
+    400072: enemy1:RightFoot
+    400074: enemy1:RightForeArm
+    400076: enemy1:RightHand
+    400078: enemy1:RightHandIndex1
+    400080: enemy1:RightHandIndex2
+    400082: enemy1:RightHandIndex3
+    400084: enemy1:RightHandIndex4
+    400086: enemy1:RightHandMiddle1
+    400088: enemy1:RightHandMiddle2
+    400090: enemy1:RightHandMiddle3
+    400092: enemy1:RightHandMiddle4
+    400094: enemy1:RightHandPinky1
+    400096: enemy1:RightHandPinky2
+    400098: enemy1:RightHandPinky3
+    400100: enemy1:RightHandPinky4
+    400102: enemy1:RightHandRing1
+    400104: enemy1:RightHandRing2
+    400106: enemy1:RightHandRing3
+    400108: enemy1:RightHandRing4
+    400110: enemy1:RightHandThumb1
+    400112: enemy1:RightHandThumb2
+    400114: enemy1:RightHandThumb3
+    400116: enemy1:RightHandThumb4
+    400118: enemy1:RightLeg
+    400120: enemy1:RightShoulder
+    400122: enemy1:RightToe_End
+    400124: enemy1:RightToeBase
+    400126: enemy1:RightUpLeg
+    400128: enemy1:Spine
+    400130: enemy1:Spine1
+    400132: enemy1:Spine2
+    4300000: enemy1:enemy
+    7400000: anim
+    9500000: //RootNode
+    13700000: enemy1:enemy
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - enemy1:Hips
+    - enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand
+    clipAnimations:
+    - serializedVersion: 16
+      name: anim
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: enemy1:enemy
+        weight: 1
+      - path: enemy1:Hips
+        weight: 1
+      - path: enemy1:Hips/enemy1:LeftUpLeg
+        weight: 1
+      - path: enemy1:Hips/enemy1:LeftUpLeg/enemy1:LeftLeg
+        weight: 1
+      - path: enemy1:Hips/enemy1:LeftUpLeg/enemy1:LeftLeg/enemy1:LeftFoot
+        weight: 1
+      - path: enemy1:Hips/enemy1:LeftUpLeg/enemy1:LeftLeg/enemy1:LeftFoot/enemy1:LeftToeBase
+        weight: 1
+      - path: enemy1:Hips/enemy1:LeftUpLeg/enemy1:LeftLeg/enemy1:LeftFoot/enemy1:LeftToeBase/enemy1:LeftToe_End
+        weight: 1
+      - path: enemy1:Hips/enemy1:RightUpLeg
+        weight: 1
+      - path: enemy1:Hips/enemy1:RightUpLeg/enemy1:RightLeg
+        weight: 1
+      - path: enemy1:Hips/enemy1:RightUpLeg/enemy1:RightLeg/enemy1:RightFoot
+        weight: 1
+      - path: enemy1:Hips/enemy1:RightUpLeg/enemy1:RightLeg/enemy1:RightFoot/enemy1:RightToeBase
+        weight: 1
+      - path: enemy1:Hips/enemy1:RightUpLeg/enemy1:RightLeg/enemy1:RightFoot/enemy1:RightToeBase/enemy1:RightToe_End
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandIndex1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandIndex1/enemy1:LeftHandIndex2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandIndex1/enemy1:LeftHandIndex2/enemy1:LeftHandIndex3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandIndex1/enemy1:LeftHandIndex2/enemy1:LeftHandIndex3/enemy1:LeftHandIndex4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandMiddle1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandMiddle1/enemy1:LeftHandMiddle2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandMiddle1/enemy1:LeftHandMiddle2/enemy1:LeftHandMiddle3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandMiddle1/enemy1:LeftHandMiddle2/enemy1:LeftHandMiddle3/enemy1:LeftHandMiddle4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandPinky1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandPinky1/enemy1:LeftHandPinky2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandPinky1/enemy1:LeftHandPinky2/enemy1:LeftHandPinky3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandPinky1/enemy1:LeftHandPinky2/enemy1:LeftHandPinky3/enemy1:LeftHandPinky4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandRing1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandRing1/enemy1:LeftHandRing2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandRing1/enemy1:LeftHandRing2/enemy1:LeftHandRing3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandRing1/enemy1:LeftHandRing2/enemy1:LeftHandRing3/enemy1:LeftHandRing4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandThumb1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandThumb1/enemy1:LeftHandThumb2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandThumb1/enemy1:LeftHandThumb2/enemy1:LeftHandThumb3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:LeftShoulder/enemy1:LeftArm/enemy1:LeftForeArm/enemy1:LeftHand/enemy1:LeftHandThumb1/enemy1:LeftHandThumb2/enemy1:LeftHandThumb3/enemy1:LeftHandThumb4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:Neck
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:Neck/enemy1:Head
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:Neck/enemy1:Head/enemy1:HeadTop_End
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandIndex1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandIndex1/enemy1:RightHandIndex2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandIndex1/enemy1:RightHandIndex2/enemy1:RightHandIndex3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandIndex1/enemy1:RightHandIndex2/enemy1:RightHandIndex3/enemy1:RightHandIndex4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandMiddle1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandMiddle1/enemy1:RightHandMiddle2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandMiddle1/enemy1:RightHandMiddle2/enemy1:RightHandMiddle3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandMiddle1/enemy1:RightHandMiddle2/enemy1:RightHandMiddle3/enemy1:RightHandMiddle4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandPinky1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandPinky1/enemy1:RightHandPinky2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandPinky1/enemy1:RightHandPinky2/enemy1:RightHandPinky3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandPinky1/enemy1:RightHandPinky2/enemy1:RightHandPinky3/enemy1:RightHandPinky4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandRing1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandRing1/enemy1:RightHandRing2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandRing1/enemy1:RightHandRing2/enemy1:RightHandRing3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandRing1/enemy1:RightHandRing2/enemy1:RightHandRing3/enemy1:RightHandRing4
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandThumb1
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandThumb1/enemy1:RightHandThumb2
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandThumb1/enemy1:RightHandThumb2/enemy1:RightHandThumb3
+        weight: 1
+      - path: enemy1:Hips/enemy1:Spine/enemy1:Spine1/enemy1:Spine2/enemy1:RightShoulder/enemy1:RightArm/enemy1:RightForeArm/enemy1:RightHand/enemy1:RightHandThumb1/enemy1:RightHandThumb2/enemy1:RightHandThumb3/enemy1:RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.65
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: enemy1:Hips
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

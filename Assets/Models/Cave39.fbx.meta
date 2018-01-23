@@ -1,0 +1,566 @@
+fileFormatVersion: 2
+guid: af56445a7463e1140a8a349a420a1148
+timeCreated: 1474104167
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cave39
+    100004: group
+    100006: group1
+    100008: group10
+    100010: group11
+    100012: group12
+    100014: group13
+    100016: group14
+    100018: group15
+    100020: group16
+    100022: group17
+    100024: group18
+    100026: group19
+    100028: group2
+    100030: group20
+    100032: group21
+    100034: group3
+    100036: group4
+    100038: group5
+    100040: group6
+    100042: group7
+    100044: group8
+    100046: group9
+    100048: imagePlane1
+    100050: pasted__group10
+    100052: pasted__group12
+    100054: pasted__group13
+    100056: pasted__group14
+    100058: pasted__group15
+    100060: pasted__group15 1
+    100062: pasted__group18
+    100064: pasted__group4
+    100066: pasted__group4 1
+    100068: pasted__group5
+    100070: pasted__group6
+    100072: pasted__group6 1
+    100074: pasted__group7
+    100076: pasted__group8
+    100078: pasted__group9
+    100080: pasted__pasted__group12
+    100082: pasted__pasted__group13
+    100084: pasted__pasted__group14
+    100086: pasted__pasted__group14 1
+    100088: pasted__pasted__group4
+    100090: pasted__pasted__group4 1
+    100092: pasted__pasted__group5
+    100094: pasted__pasted__group6
+    100096: pasted__pasted__group6 1
+    100098: pasted__pasted__group7
+    100100: pasted__pasted__pasted__group12
+    100102: pasted__pasted__pasted__group13
+    100104: pasted__pasted__pasted__group13 1
+    100106: pasted__pasted__pasted__group4
+    100108: pasted__pasted__pasted__group6
+    100110: pasted__pasted__pasted__pasted__group12
+    100112: pasted__pasted__pasted__pasted__group12 1
+    100114: pasted__pasted__pasted__pasted__pasted__pCube1
+    100116: pasted__pasted__pasted__pasted__pasted__pCube1 1
+    100118: pasted__pasted__pasted__pasted__pCube1
+    100120: pasted__pasted__pasted__pasted__pCube1 1
+    100122: pasted__pasted__pasted__pasted__pCube1 2
+    100124: pasted__pasted__pasted__pCube1
+    100126: pasted__pasted__pasted__pCube1 1
+    100128: pasted__pasted__pasted__pCube1 2
+    100130: pasted__pasted__pasted__pCube1 3
+    100132: pasted__pasted__pasted__pCube1 4
+    100134: pasted__pasted__pCube1
+    100136: pasted__pasted__pCube1 1
+    100138: pasted__pasted__pCube1 2
+    100140: pasted__pasted__pCube1 3
+    100142: pasted__pasted__pCube1 4
+    100144: pasted__pCube1
+    100146: pasted__pCube1 1
+    100148: pasted__pCube1 2
+    100150: pasted__pPipe1
+    100152: pasted__pPipe1 1
+    100154: pasted__pPipe1 2
+    100156: pasted__pPipe1 3
+    100158: pCube1
+    100160: pPipe1
+    100162: group22
+    100164: pasted__pPipe2
+    100166: pasted__pPipe3
+    100168: pasted__pPipe4
+    100170: Wall00
+    100172: Wall00 1
+    100174: Wall00 2
+    100176: Wall00 3
+    100178: Wall00 4
+    100180: Wall01
+    100182: Wall01 1
+    100184: Wall01 2
+    100186: Wall01 3
+    100188: Wall01 4
+    100190: Wall02
+    100192: Wall02 1
+    100194: Wall02 2
+    100196: Wall02 3
+    100198: Wall02 4
+    100200: Wall03
+    100202: Wall03 1
+    100204: Wall03 2
+    100206: Wall03 3
+    100208: Wall03 4
+    100210: Wall04
+    100212: Wall04 1
+    100214: Wall05
+    100216: Wall05 1
+    100218: Wall1
+    100220: Wall2
+    100222: Wall3
+    100224: Wall4
+    100226: Wall5
+    100228: BossCave
+    100230: cave40
+    100232: cave39
+    100234: Camera
+    100236: Lamp
+    100238: Wall00.001
+    100240: Wall00.002
+    100242: Wall00.003
+    100244: Wall00.004
+    100246: Wall01.001
+    100248: Wall01.002
+    100250: Wall01.003
+    100252: Wall01.004
+    100254: Wall02.001
+    100256: Wall02.002
+    100258: Wall02.003
+    100260: Wall02.004
+    100262: Wall03.001
+    100264: Wall03.002
+    100266: Wall03.003
+    100268: Wall03.004
+    100270: Wall04.001
+    100272: Wall05.001
+    400000: //RootNode
+    400002: Cave39
+    400004: group
+    400006: group1
+    400008: group10
+    400010: group11
+    400012: group12
+    400014: group13
+    400016: group14
+    400018: group15
+    400020: group16
+    400022: group17
+    400024: group18
+    400026: group19
+    400028: group2
+    400030: group20
+    400032: group21
+    400034: group3
+    400036: group4
+    400038: group5
+    400040: group6
+    400042: group7
+    400044: group8
+    400046: group9
+    400048: imagePlane1
+    400050: pasted__group10
+    400052: pasted__group12
+    400054: pasted__group13
+    400056: pasted__group14
+    400058: pasted__group15
+    400060: pasted__group15 1
+    400062: pasted__group18
+    400064: pasted__group4
+    400066: pasted__group4 1
+    400068: pasted__group5
+    400070: pasted__group6
+    400072: pasted__group6 1
+    400074: pasted__group7
+    400076: pasted__group8
+    400078: pasted__group9
+    400080: pasted__pasted__group12
+    400082: pasted__pasted__group13
+    400084: pasted__pasted__group14
+    400086: pasted__pasted__group14 1
+    400088: pasted__pasted__group4
+    400090: pasted__pasted__group4 1
+    400092: pasted__pasted__group5
+    400094: pasted__pasted__group6
+    400096: pasted__pasted__group6 1
+    400098: pasted__pasted__group7
+    400100: pasted__pasted__pasted__group12
+    400102: pasted__pasted__pasted__group13
+    400104: pasted__pasted__pasted__group13 1
+    400106: pasted__pasted__pasted__group4
+    400108: pasted__pasted__pasted__group6
+    400110: pasted__pasted__pasted__pasted__group12
+    400112: pasted__pasted__pasted__pasted__group12 1
+    400114: pasted__pasted__pasted__pasted__pasted__pCube1
+    400116: pasted__pasted__pasted__pasted__pasted__pCube1 1
+    400118: pasted__pasted__pasted__pasted__pCube1
+    400120: pasted__pasted__pasted__pasted__pCube1 1
+    400122: pasted__pasted__pasted__pasted__pCube1 2
+    400124: pasted__pasted__pasted__pCube1
+    400126: pasted__pasted__pasted__pCube1 1
+    400128: pasted__pasted__pasted__pCube1 2
+    400130: pasted__pasted__pasted__pCube1 3
+    400132: pasted__pasted__pasted__pCube1 4
+    400134: pasted__pasted__pCube1
+    400136: pasted__pasted__pCube1 1
+    400138: pasted__pasted__pCube1 2
+    400140: pasted__pasted__pCube1 3
+    400142: pasted__pasted__pCube1 4
+    400144: pasted__pCube1
+    400146: pasted__pCube1 1
+    400148: pasted__pCube1 2
+    400150: pasted__pPipe1
+    400152: pasted__pPipe1 1
+    400154: pasted__pPipe1 2
+    400156: pasted__pPipe1 3
+    400158: pCube1
+    400160: pPipe1
+    400162: group22
+    400164: pasted__pPipe2
+    400166: pasted__pPipe3
+    400168: pasted__pPipe4
+    400170: Wall00
+    400172: Wall00 1
+    400174: Wall00 2
+    400176: Wall00 3
+    400178: Wall00 4
+    400180: Wall01
+    400182: Wall01 1
+    400184: Wall01 2
+    400186: Wall01 3
+    400188: Wall01 4
+    400190: Wall02
+    400192: Wall02 1
+    400194: Wall02 2
+    400196: Wall02 3
+    400198: Wall02 4
+    400200: Wall03
+    400202: Wall03 1
+    400204: Wall03 2
+    400206: Wall03 3
+    400208: Wall03 4
+    400210: Wall04
+    400212: Wall04 1
+    400214: Wall05
+    400216: Wall05 1
+    400218: Wall1
+    400220: Wall2
+    400222: Wall3
+    400224: Wall4
+    400226: Wall5
+    400228: BossCave
+    400230: cave40
+    400232: cave39
+    400234: Camera
+    400236: Lamp
+    400238: Wall00.001
+    400240: Wall00.002
+    400242: Wall00.003
+    400244: Wall00.004
+    400246: Wall01.001
+    400248: Wall01.002
+    400250: Wall01.003
+    400252: Wall01.004
+    400254: Wall02.001
+    400256: Wall02.002
+    400258: Wall02.003
+    400260: Wall02.004
+    400262: Wall03.001
+    400264: Wall03.002
+    400266: Wall03.003
+    400268: Wall03.004
+    400270: Wall04.001
+    400272: Wall05.001
+    2300000: Cave39
+    2300002: pasted__pasted__pasted__pasted__pasted__pCube1
+    2300004: pasted__pasted__pasted__pasted__pasted__pCube1 1
+    2300006: pasted__pasted__pasted__pasted__pCube1
+    2300008: pasted__pasted__pasted__pasted__pCube1 1
+    2300010: pasted__pasted__pasted__pasted__pCube1 2
+    2300012: pasted__pasted__pasted__pCube1
+    2300014: pasted__pasted__pasted__pCube1 1
+    2300016: pasted__pasted__pasted__pCube1 2
+    2300018: pasted__pasted__pasted__pCube1 3
+    2300020: pasted__pasted__pasted__pCube1 4
+    2300022: pasted__pasted__pCube1
+    2300024: pasted__pasted__pCube1 1
+    2300026: pasted__pasted__pCube1 2
+    2300028: pasted__pasted__pCube1 3
+    2300030: pasted__pasted__pCube1 4
+    2300032: pasted__pCube1
+    2300034: pasted__pCube1 1
+    2300036: pasted__pCube1 2
+    2300038: pasted__pPipe1
+    2300040: pasted__pPipe1 1
+    2300042: pasted__pPipe1 2
+    2300044: pasted__pPipe1 3
+    2300046: pCube1
+    2300048: pPipe1
+    2300050: pasted__pPipe2
+    2300052: pasted__pPipe3
+    2300054: pasted__pPipe4
+    2300056: Wall00
+    2300058: Wall00 1
+    2300060: Wall00 2
+    2300062: Wall00 3
+    2300064: Wall00 4
+    2300066: Wall01
+    2300068: Wall01 1
+    2300070: Wall01 2
+    2300072: Wall01 3
+    2300074: Wall01 4
+    2300076: Wall02
+    2300078: Wall02 1
+    2300080: Wall02 2
+    2300082: Wall02 3
+    2300084: Wall02 4
+    2300086: Wall03
+    2300088: Wall03 1
+    2300090: Wall03 2
+    2300092: Wall03 3
+    2300094: Wall03 4
+    2300096: Wall04
+    2300098: Wall04 1
+    2300100: Wall05
+    2300102: Wall05 1
+    2300104: cave40
+    2300106: cave39
+    2300108: Wall00.001
+    2300110: Wall00.002
+    2300112: Wall00.003
+    2300114: Wall00.004
+    2300116: Wall01.001
+    2300118: Wall01.002
+    2300120: Wall01.003
+    2300122: Wall01.004
+    2300124: Wall02.001
+    2300126: Wall02.002
+    2300128: Wall02.003
+    2300130: Wall02.004
+    2300132: Wall03.001
+    2300134: Wall03.002
+    2300136: Wall03.003
+    2300138: Wall03.004
+    2300140: Wall04.001
+    2300142: Wall05.001
+    3300000: Cave39
+    3300002: pasted__pasted__pasted__pasted__pasted__pCube1
+    3300004: pasted__pasted__pasted__pasted__pasted__pCube1 1
+    3300006: pasted__pasted__pasted__pasted__pCube1
+    3300008: pasted__pasted__pasted__pasted__pCube1 1
+    3300010: pasted__pasted__pasted__pasted__pCube1 2
+    3300012: pasted__pasted__pasted__pCube1
+    3300014: pasted__pasted__pasted__pCube1 1
+    3300016: pasted__pasted__pasted__pCube1 2
+    3300018: pasted__pasted__pasted__pCube1 3
+    3300020: pasted__pasted__pasted__pCube1 4
+    3300022: pasted__pasted__pCube1
+    3300024: pasted__pasted__pCube1 1
+    3300026: pasted__pasted__pCube1 2
+    3300028: pasted__pasted__pCube1 3
+    3300030: pasted__pasted__pCube1 4
+    3300032: pasted__pCube1
+    3300034: pasted__pCube1 1
+    3300036: pasted__pCube1 2
+    3300038: pasted__pPipe1
+    3300040: pasted__pPipe1 1
+    3300042: pasted__pPipe1 2
+    3300044: pasted__pPipe1 3
+    3300046: pCube1
+    3300048: pPipe1
+    3300050: pasted__pPipe2
+    3300052: pasted__pPipe3
+    3300054: pasted__pPipe4
+    3300056: Wall00
+    3300058: Wall00 1
+    3300060: Wall00 2
+    3300062: Wall00 3
+    3300064: Wall00 4
+    3300066: Wall01
+    3300068: Wall01 1
+    3300070: Wall01 2
+    3300072: Wall01 3
+    3300074: Wall01 4
+    3300076: Wall02
+    3300078: Wall02 1
+    3300080: Wall02 2
+    3300082: Wall02 3
+    3300084: Wall02 4
+    3300086: Wall03
+    3300088: Wall03 1
+    3300090: Wall03 2
+    3300092: Wall03 3
+    3300094: Wall03 4
+    3300096: Wall04
+    3300098: Wall04 1
+    3300100: Wall05
+    3300102: Wall05 1
+    3300104: cave40
+    3300106: cave39
+    3300108: Wall00.001
+    3300110: Wall00.002
+    3300112: Wall00.003
+    3300114: Wall00.004
+    3300116: Wall01.001
+    3300118: Wall01.002
+    3300120: Wall01.003
+    3300122: Wall01.004
+    3300124: Wall02.001
+    3300126: Wall02.002
+    3300128: Wall02.003
+    3300130: Wall02.004
+    3300132: Wall03.001
+    3300134: Wall03.002
+    3300136: Wall03.003
+    3300138: Wall03.004
+    3300140: Wall04.001
+    3300142: Wall05.001
+    4300000: Cave39
+    4300002: pPipe1
+    4300004: pasted__pPipe1
+    4300006: pasted__pPipe1
+    4300008: pasted__pPipe1
+    4300010: pasted__pPipe1
+    4300012: pCube1
+    4300014: pasted__pCube1
+    4300016: pasted__pasted__pCube1
+    4300018: pasted__pCube1
+    4300020: pasted__pasted__pCube1
+    4300022: pasted__pasted__pasted__pCube1
+    4300024: pasted__pasted__pCube1
+    4300026: pasted__pasted__pasted__pCube1
+    4300028: pasted__pasted__pasted__pCube1
+    4300030: pasted__pCube1
+    4300032: pasted__pasted__pCube1
+    4300034: pasted__pasted__pasted__pCube1
+    4300036: pasted__pasted__pasted__pasted__pCube1
+    4300038: pasted__pasted__pasted__pasted__pasted__pCube1
+    4300040: pasted__pasted__pasted__pasted__pasted__pCube1
+    4300042: pasted__pasted__pCube1
+    4300044: pasted__pasted__pasted__pCube1
+    4300046: pasted__pasted__pasted__pasted__pCube1
+    4300048: pasted__pasted__pasted__pasted__pCube1
+    4300050: pasted__pPipe2
+    4300052: pasted__pPipe3
+    4300054: pasted__pPipe4
+    4300056: Wall01
+    4300058: Wall02
+    4300060: Wall03
+    4300062: Wall04
+    4300064: Wall05
+    4300066: Wall00
+    4300068: Wall01
+    4300070: Wall02
+    4300072: Wall03
+    4300074: Wall00
+    4300076: Wall01
+    4300078: Wall05
+    4300080: Wall02
+    4300082: Wall03
+    4300084: Wall04
+    4300086: Wall00
+    4300088: Wall01
+    4300090: Wall03
+    4300092: Wall02
+    4300094: Wall00
+    4300096: Wall01
+    4300098: Wall02
+    4300100: Wall03
+    4300102: Wall00
+    4300104: cave40
+    4300106: cave39
+    4300108: Wall00.004
+    4300110: Wall03.004
+    4300112: Wall02.004
+    4300114: Wall01.004
+    4300116: Wall00.003
+    4300118: Wall02.003
+    4300120: Wall03.003
+    4300122: Wall01.003
+    4300124: Wall00.002
+    4300126: Wall04.001
+    4300128: Wall03.002
+    4300130: Wall02.002
+    4300132: Wall05.001
+    4300134: Wall01.002
+    4300136: Wall00.001
+    4300138: Wall03.001
+    4300140: Wall02.001
+    4300142: Wall01.001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,579 @@
+fileFormatVersion: 2
+guid: 4a69098dca1624e39a7e0a5b5ea22305
+timeCreated: 1504128418
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Base
+    100002: Base1
+    100004: Bat_Main_Joint
+    100006: //RootNode
+    100008: BatMesh
+    100010: Box001
+    100012: Box002
+    100014: Crown
+    100016: joint1
+    100018: joint10
+    100020: joint11
+    100022: joint12
+    100024: joint13
+    100026: joint14
+    100028: joint15
+    100030: joint17
+    100032: joint18
+    100034: joint19
+    100036: joint3
+    100038: joint5
+    100040: joint6
+    100042: joint7
+    100044: joint8
+    100046: joint9
+    100048: Object001
+    100050: Object002
+    100052: Text001
+    400000: Base
+    400002: Base1
+    400004: Bat_Main_Joint
+    400006: //RootNode
+    400008: BatMesh
+    400010: Box001
+    400012: Box002
+    400014: Crown
+    400016: joint1
+    400018: joint10
+    400020: joint11
+    400022: joint12
+    400024: joint13
+    400026: joint14
+    400028: joint15
+    400030: joint17
+    400032: joint18
+    400034: joint19
+    400036: joint3
+    400038: joint5
+    400040: joint6
+    400042: joint7
+    400044: joint8
+    400046: joint9
+    400048: Object001
+    400050: Object002
+    400052: Text001
+    2300000: Box001
+    2300002: Box002
+    2300004: Crown
+    2300006: Object001
+    2300008: Object002
+    2300010: Text001
+    3300000: Box001
+    3300002: Box002
+    3300004: Crown
+    3300006: Object001
+    3300008: Object002
+    3300010: Text001
+    4300000: BatMesh
+    4300002: Crown
+    4300004: Object001
+    4300006: Box002
+    4300008: Text001
+    4300010: Box001
+    4300012: Object002
+    7400000: FlyAnim
+    7400002: HitAnim
+    7400004: AttackAnim
+    7400006: DrinkAnim
+    7400008: DeathAnim
+    9500000: //RootNode
+    13700000: BatMesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: FlyAnim
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bat_Main_Joint
+        weight: 1
+      - path: Bat_Main_Joint/joint1
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18/joint19
+        weight: 1
+      - path: Bat_Main_Joint/joint3
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17/joint5
+        weight: 1
+      - path: Bat_Main_Joint/joint6
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Bat_Main_Joint/joint11
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: BatMesh
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Crown/Box001
+        weight: 1
+      - path: Crown/Box002
+        weight: 1
+      - path: Crown/Object001
+        weight: 1
+      - path: Crown/Object002
+        weight: 1
+      - path: Crown/Text001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HitAnim
+      takeName: Take 001
+      firstFrame: 145
+      lastFrame: 181
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bat_Main_Joint
+        weight: 1
+      - path: Bat_Main_Joint/joint1
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18/joint19
+        weight: 1
+      - path: Bat_Main_Joint/joint3
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17/joint5
+        weight: 1
+      - path: Bat_Main_Joint/joint6
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Bat_Main_Joint/joint11
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: BatMesh
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Crown/Box001
+        weight: 1
+      - path: Crown/Box002
+        weight: 1
+      - path: Crown/Object001
+        weight: 1
+      - path: Crown/Object002
+        weight: 1
+      - path: Crown/Text001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackAnim
+      takeName: Take 001
+      firstFrame: 42
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.99834824
+        functionName: EndAttackAnim
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bat_Main_Joint
+        weight: 1
+      - path: Bat_Main_Joint/joint1
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18/joint19
+        weight: 1
+      - path: Bat_Main_Joint/joint3
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17/joint5
+        weight: 1
+      - path: Bat_Main_Joint/joint6
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Bat_Main_Joint/joint11
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: BatMesh
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Crown/Box001
+        weight: 1
+      - path: Crown/Box002
+        weight: 1
+      - path: Crown/Object001
+        weight: 1
+      - path: Crown/Object002
+        weight: 1
+      - path: Crown/Text001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DrinkAnim
+      takeName: Take 001
+      firstFrame: 77
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bat_Main_Joint
+        weight: 1
+      - path: Bat_Main_Joint/joint1
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18/joint19
+        weight: 1
+      - path: Bat_Main_Joint/joint3
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17/joint5
+        weight: 1
+      - path: Bat_Main_Joint/joint6
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Bat_Main_Joint/joint11
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: BatMesh
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Crown/Box001
+        weight: 1
+      - path: Crown/Box002
+        weight: 1
+      - path: Crown/Object001
+        weight: 1
+      - path: Crown/Object002
+        weight: 1
+      - path: Crown/Text001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DeathAnim
+      takeName: Take 001
+      firstFrame: 198
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bat_Main_Joint
+        weight: 1
+      - path: Bat_Main_Joint/joint1
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18
+        weight: 1
+      - path: Bat_Main_Joint/joint1/joint18/joint19
+        weight: 1
+      - path: Bat_Main_Joint/joint3
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17
+        weight: 1
+      - path: Bat_Main_Joint/joint3/Base1/Base/joint17/joint5
+        weight: 1
+      - path: Bat_Main_Joint/joint6
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Bat_Main_Joint/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Bat_Main_Joint/joint11
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Bat_Main_Joint/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: BatMesh
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Crown/Box001
+        weight: 1
+      - path: Crown/Box002
+        weight: 1
+      - path: Crown/Object001
+        weight: 1
+      - path: Crown/Object002
+        weight: 1
+      - path: Crown/Text001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

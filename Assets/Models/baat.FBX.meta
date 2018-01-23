@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 0d4df907209b0914e95c9f7dd3b2fde3
+timeCreated: 1454963715
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bat_body
+    100004: Bn_Body
+    100006: Bn_Effector_Body
+    100008: Bn_Effector_Left
+    100010: Bn_Effector_Right
+    100012: Bn_Effectore_Head
+    100014: Bn_Effectore_L_Ear
+    100016: Bn_Effectore_R_Ear
+    100018: Bn_Head
+    100020: Bn_L_Begin_Arm
+    100022: Bn_L_Ear_Lower
+    100024: Bn_L_Ear_Upper
+    100026: Bn_L_End_Arm
+    100028: Bn_L_Mid_Arm
+    100030: Bn_L_Sholder
+    100032: Bn_Neck
+    100034: Bn_R_Begin_Arm
+    100036: Bn_R_Ear_Lower
+    100038: Bn_R_Ear_Upper
+    100040: Bn_R_End_Arm
+    100042: Bn_R_Mid_Arm
+    100044: Bn_R_Sholder
+    100046: Bn_Tial
+    100048: Box001
+    100050: Box002
+    100052: Crowd001
+    100054: Crowd002
+    100056: GeoSphere001
+    100058: GeoSphere002
+    100060: Object001
+    100062: Object002
+    100064: Over Head
+    100066: Text001
+    100068: Tube001
+    400000: //RootNode
+    400002: bat_body
+    400004: Bn_Body
+    400006: Bn_Effector_Body
+    400008: Bn_Effector_Left
+    400010: Bn_Effector_Right
+    400012: Bn_Effectore_Head
+    400014: Bn_Effectore_L_Ear
+    400016: Bn_Effectore_R_Ear
+    400018: Bn_Head
+    400020: Bn_L_Begin_Arm
+    400022: Bn_L_Ear_Lower
+    400024: Bn_L_Ear_Upper
+    400026: Bn_L_End_Arm
+    400028: Bn_L_Mid_Arm
+    400030: Bn_L_Sholder
+    400032: Bn_Neck
+    400034: Bn_R_Begin_Arm
+    400036: Bn_R_Ear_Lower
+    400038: Bn_R_Ear_Upper
+    400040: Bn_R_End_Arm
+    400042: Bn_R_Mid_Arm
+    400044: Bn_R_Sholder
+    400046: Bn_Tial
+    400048: Box001
+    400050: Box002
+    400052: Crowd001
+    400054: Crowd002
+    400056: GeoSphere001
+    400058: GeoSphere002
+    400060: Object001
+    400062: Object002
+    400064: Over Head
+    400066: Text001
+    400068: Tube001
+    2300000: Box001
+    2300002: Box002
+    2300004: GeoSphere001
+    2300006: GeoSphere002
+    2300008: Object001
+    2300010: Object002
+    2300012: Text001
+    2300014: Tube001
+    3300000: Box001
+    3300002: Box002
+    3300004: GeoSphere001
+    3300006: GeoSphere002
+    3300008: Object001
+    3300010: Object002
+    3300012: Text001
+    3300014: Tube001
+    4300000: bat_body
+    4300002: GeoSphere001
+    4300004: GeoSphere002
+    4300006: Object002
+    4300008: Tube001
+    4300010: Object001
+    4300012: Box002
+    4300014: Text001
+    4300016: Box001
+    7400000: isFlying
+    7400002: isHitanim
+    7400004: isDrinkinganim
+    9500000: //RootNode
+    13700000: bat_body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: isFlying
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bat_body
+        weight: 1
+      - path: Bn_Neck
+        weight: 1
+      - path: Bn_Neck/Bn_Body
+        weight: 1
+      - path: Bn_Neck/Bn_Body/Bn_Tial
+        weight: 1
+      - path: Bn_Neck/Bn_Body/Bn_Tial/Bn_Effector_Body
+        weight: 1
+      - path: Bn_Neck/Bn_Head
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_Effectore_Head
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower/Bn_L_Ear_Upper
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower/Bn_L_Ear_Upper/Bn_Effectore_L_Ear
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower/Bn_R_Ear_Upper
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower/Bn_R_Ear_Upper/Bn_Effectore_R_Ear
+        weight: 1
+      - path: Bn_Neck/Bn_Head/GeoSphere001
+        weight: 1
+      - path: Bn_Neck/Bn_Head/GeoSphere002
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm/Bn_L_End_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm/Bn_L_End_Arm/Bn_Effector_Left
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm/Bn_Effector_Right
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm/Crowd001
+        weight: 1
+      - path: Bn_Neck/Over Head
+        weight: 1
+      - path: Bn_Neck/Over Head/Object002
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Box001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Box002
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Object001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Text001
+        weight: 1
+      - path: Crowd002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: isHitanim
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 76
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bat_body
+        weight: 1
+      - path: Bn_Neck
+        weight: 1
+      - path: Bn_Neck/Bn_Body
+        weight: 1
+      - path: Bn_Neck/Bn_Body/Bn_Tial
+        weight: 1
+      - path: Bn_Neck/Bn_Body/Bn_Tial/Bn_Effector_Body
+        weight: 1
+      - path: Bn_Neck/Bn_Head
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_Effectore_Head
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower/Bn_L_Ear_Upper
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower/Bn_L_Ear_Upper/Bn_Effectore_L_Ear
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower/Bn_R_Ear_Upper
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower/Bn_R_Ear_Upper/Bn_Effectore_R_Ear
+        weight: 1
+      - path: Bn_Neck/Bn_Head/GeoSphere001
+        weight: 1
+      - path: Bn_Neck/Bn_Head/GeoSphere002
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm/Bn_L_End_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm/Bn_L_End_Arm/Bn_Effector_Left
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm/Bn_Effector_Right
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm/Crowd001
+        weight: 1
+      - path: Bn_Neck/Over Head
+        weight: 1
+      - path: Bn_Neck/Over Head/Object002
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Box001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Box002
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Object001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Text001
+        weight: 1
+      - path: Crowd002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: isDrinkinganim
+      takeName: Take 001
+      firstFrame: 76
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bat_body
+        weight: 1
+      - path: Bn_Neck
+        weight: 1
+      - path: Bn_Neck/Bn_Body
+        weight: 1
+      - path: Bn_Neck/Bn_Body/Bn_Tial
+        weight: 1
+      - path: Bn_Neck/Bn_Body/Bn_Tial/Bn_Effector_Body
+        weight: 1
+      - path: Bn_Neck/Bn_Head
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_Effectore_Head
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower/Bn_L_Ear_Upper
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_L_Ear_Lower/Bn_L_Ear_Upper/Bn_Effectore_L_Ear
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower/Bn_R_Ear_Upper
+        weight: 1
+      - path: Bn_Neck/Bn_Head/Bn_R_Ear_Lower/Bn_R_Ear_Upper/Bn_Effectore_R_Ear
+        weight: 1
+      - path: Bn_Neck/Bn_Head/GeoSphere001
+        weight: 1
+      - path: Bn_Neck/Bn_Head/GeoSphere002
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm/Bn_L_End_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_L_Sholder/Bn_L_Begin_Arm/Bn_L_Mid_Arm/Bn_L_End_Arm/Bn_Effector_Left
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm/Bn_Effector_Right
+        weight: 1
+      - path: Bn_Neck/Bn_R_Sholder/Bn_R_Begin_Arm/Bn_R_Mid_Arm/Bn_R_End_Arm/Crowd001
+        weight: 1
+      - path: Bn_Neck/Over Head
+        weight: 1
+      - path: Bn_Neck/Over Head/Object002
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Box001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Box002
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Object001
+        weight: 1
+      - path: Bn_Neck/Over Head/Tube001/Text001
+        weight: 1
+      - path: Crowd002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: daea0677544d13443ac04d3d1eeb330f,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

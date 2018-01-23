@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D9DCF6DB-946D-BD94-AB1D-28BABEBA267B}") = "Bat EDITOR 2.2", "Assembly-CSharp.csproj", "{2B40EA14-5092-3637-BEB6-26907C2F61FD}"
+EndProject
+Project("{D9DCF6DB-946D-BD94-AB1D-28BABEBA267B}") = "Bat EDITOR 2.2", "Assembly-CSharp-Editor.csproj", "{BC300A2A-CBAF-4FBE-E6C8-EBAB08B8F74B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B40EA14-5092-3637-BEB6-26907C2F61FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B40EA14-5092-3637-BEB6-26907C2F61FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B40EA14-5092-3637-BEB6-26907C2F61FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B40EA14-5092-3637-BEB6-26907C2F61FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC300A2A-CBAF-4FBE-E6C8-EBAB08B8F74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC300A2A-CBAF-4FBE-E6C8-EBAB08B8F74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC300A2A-CBAF-4FBE-E6C8-EBAB08B8F74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC300A2A-CBAF-4FBE-E6C8-EBAB08B8F74B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

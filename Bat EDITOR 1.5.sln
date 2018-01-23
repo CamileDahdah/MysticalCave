@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bat EDITOR 1.5.CSharp", "Bat EDITOR 1.5.CSharp.csproj", "{720C9D2C-F165-A665-0BA9-38B2A026F6EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bat EDITOR 1.5.CSharp.Editor", "Bat EDITOR 1.5.CSharp.Editor.csproj", "{832FDB4B-1C36-E8CF-8AD0-1D25B10F8047}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{720C9D2C-F165-A665-0BA9-38B2A026F6EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{720C9D2C-F165-A665-0BA9-38B2A026F6EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{720C9D2C-F165-A665-0BA9-38B2A026F6EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{720C9D2C-F165-A665-0BA9-38B2A026F6EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832FDB4B-1C36-E8CF-8AD0-1D25B10F8047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832FDB4B-1C36-E8CF-8AD0-1D25B10F8047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832FDB4B-1C36-E8CF-8AD0-1D25B10F8047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832FDB4B-1C36-E8CF-8AD0-1D25B10F8047}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

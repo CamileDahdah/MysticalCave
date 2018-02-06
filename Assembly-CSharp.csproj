@@ -69,6 +69,7 @@
      <Compile Include="Assets\Draw Call Minimizer\Scripts\OLD\Runtime\MeshCombineUtility.cs" />
      <Compile Include="Assets\Draw Call Minimizer\Scripts\OLD\Runtime\OptimizedCombineChildren.cs" />
      <Compile Include="Assets\Draw Call Minimizer\Scripts\OLD\Runtime\TextureCombineUtility.cs" />
+     <Compile Include="Assets\Gradient.cs" />
      <Compile Include="Assets\Level4RockTrigger.cs" />
      <Compile Include="Assets\Magical\Sources\Scripts\FX_HitSpawner.cs" />
      <Compile Include="Assets\Magical\Sources\Scripts\FX_LifeTime.cs" />

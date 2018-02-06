@@ -57,7 +57,7 @@ public class Menu : MonoBehaviour {
 		}
 
 		levelsParent.GetComponent<RawImage> ().texture = levelsImages[levelCounter - 1];
-		levelText.text = "Level " + levelCounter;
+		levelText.text = "" + levelCounter;
 	}
 
 	public void MenuClick(){

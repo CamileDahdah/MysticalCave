@@ -89,7 +89,7 @@ public class Slingshot : MonoBehaviour{
 	}
 
 	public void SendWaveButton() {
-		Debug.Log (numWaves);
+		//Debug.Log (numWaves);
 		if (timer >= timeBetweenBullets && Time.timeScale != 0
 			&& numWaves >= 0 && audioTimer > 1.5f && damage.isActive){
 				WaitForConstraints();

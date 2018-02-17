@@ -14,7 +14,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 af723155c251fcfa0e66530a75f3ea4c UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RemainingSkillText
 5d838bb1542116ce29f368a6cbeb23cf Assembly-CSharp.dll:.SceneManagerCharbz
-ee3c4f188dd0540e572b83270d99dece Assembly-CSharp.dll:.PauseManager
+2cb4b7bfba105264e5e14a5be347a69e Assembly-CSharp.dll:.PauseManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HandleBatMainAnimator
 dd5481137759597d614818793c90a7fe Assembly-UnityScript.dll:.SoulRotateScript
 f4f4c3ce7394f2ef11fb95cf372acb11 Assembly-CSharp.dll:.Damage

@@ -25,8 +25,9 @@ public class EnemyHealth : MonoBehaviour {
 		neverHurt = true;
 		isDead = false;
 		//boxCollider.enabled = true;
-		if(sphereCollider != null)
-		sphereCollider.enabled = true;
+		if (sphereCollider != null) {
+			sphereCollider.enabled = true;
+		}
 
 	}
 	
@@ -37,7 +38,9 @@ public class EnemyHealth : MonoBehaviour {
 		if (neverHurt && currenthealth <= maxHealth / 2) {
 			enemyState.State = EnemyStates.EnumStates.Hurt;
 			neverHurt = false;
-			sphereCollider.enabled = false;
+			if (sphereCollider != null) {
+				sphereCollider.enabled = false;
+			}
 
 		}
 		if (currenthealth <= 0) {
@@ -56,7 +59,9 @@ public class EnemyHealth : MonoBehaviour {
 
 	public void DeathAnimationFinished(){
 		boxCollider.enabled = false;
-		sphereCollider.enabled = false;
+		if (sphereCollider != null) {
+			sphereCollider.enabled = false;
+		}
 		anim.enabled = false;
 
 	}

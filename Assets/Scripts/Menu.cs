@@ -6,22 +6,33 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour {
 
 	public GameObject next, previous;
-	public GameObject levelsPanel, introPanel, menuPanel;
+	public GameObject levelsPanel, introPanel, menuPanel, settingsPanel;
 	public GameObject levelsParent;
 	int levelCounter, maxLevel;
 	public List<Texture> levelsImages;
 	public Text levelText;
+	public static Menu instance;
 
 	void Start () {
+		
+		if (instance == null) {
+			instance = this;
+		} else {
+			Destroy (this);
+		}
+
 		levelCounter = 1;
 		GameManager.currentLevel = levelCounter;
 		maxLevel = levelsImages.Count;
 	}
 
+	void OnEnable(){
+		Time.timeScale = 1;
+	}
+
 	public void Play(){
 
 		levelsPanel.SetActive (true);
-		introPanel.SetActive (false);
 		menuPanel.SetActive (false);
 		ManageButtons ();
 	}
@@ -63,7 +74,12 @@ public class Menu : MonoBehaviour {
 	public void MenuClick(){
 		
 		levelsPanel.SetActive (false);
-		introPanel.SetActive (true);
+		settingsPanel.SetActive (false);
 		menuPanel.SetActive (true);
+	}
+
+	public void SettingsClick(){
+
+		settingsPanel.SetActive (true);
 	}
 }

@@ -2,8 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu.cs">
     <Files>
+      <File FileName="Assets/Scripts/Menu.cs" Line="29" Column="8" />
       <File FileName="Assets/Gradient.cs" Line="46" Column="2" />
-      <File FileName="Assets/Scripts/Menu.cs" Line="60" Column="25" />
+      <File FileName="Assets/Scripts/ScreenResolution.cs" Line="109" Column="16" />
+      <File FileName="Assets/Scripts/SceneManagerCharbz.cs" Line="19" Column="4" />
+      <File FileName="Assets/Scripts/BounceHitSound.cs" Line="20" Column="35" />
+      <File FileName="Assets/Scripts/PauseManager.cs" Line="27" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

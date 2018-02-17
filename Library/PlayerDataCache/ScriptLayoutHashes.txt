@@ -144,7 +144,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9165d71b897deca9979d1aff454a8b9b Assembly-CSharp.dll:.TouchManager
 4daf45ea92c6f4f42bb150464f141fc1 Assembly-CSharp.dll:.RocksFallingEndAnim
 c7b2e9aadfaffe46b9b1649be7945e95 Assembly-CSharp.dll:MagicalFX.FX_LifeTime
-1dd7f6e5c36ff2e197c1b43b99925868 Assembly-CSharp.dll:.ScreenResolution
+7b2b17d3600b2ff652847ae45412b8e0 Assembly-CSharp.dll:.ScreenResolution
 0ea7e3a1b65cd933d7a007e6774c4eaa Assembly-CSharp.dll:.Arrow
 3023ecaf84ba6db306364d0d61366b3e Assembly-CSharp.dll:MagicalFX.FX_HitSpawner
 d72148a65bb835f8efd15463a68b1f3f Assembly-CSharp.dll:.PlayerHealth
@@ -152,6 +152,7 @@ d72148a65bb835f8efd15463a68b1f3f Assembly-CSharp.dll:.PlayerHealth
 35eee393b27ec2cc383171340c82d4be Assembly-CSharp.dll:.CheckPoint
 f5b4b8fd8fe77b6da69002f0789ac61b Assembly-CSharp.dll:.EnemyStates
 5009aad64ab3e47e96f18de3ea2400a1 Assembly-CSharp.dll:.Chase
+b422e669e82169ede3e5b96ceb482dfa Assembly-CSharp.dll:.Gradient
 de61ad39aa8df2c51c9223d0149c8d2d Assembly-CSharp.dll:MagicalFX.FX_Mover
 73659c425f242c138b450ba4872c63aa Assembly-CSharp.dll:.TurnOffRotation
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -181,7 +182,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 ac572812351059d0686f31103e8b1b4b Assembly-CSharp.dll:.ScoreManager
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 1c4ab56a81771fe294714e218580b284 Assembly-CSharp.dll:.RandomBloodJars
-1ac12fa757d70845f0721b5d7b8ba488 Assembly-CSharp.dll:.Menu
+812bdff63da656c3fc6caafaefb60258 Assembly-CSharp.dll:.Menu
 d4283c0e2508dbb37f7fcd863fab4702 Assembly-CSharp.dll:.EnemyHealth
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -210,4 +211,3 @@ c515e930b05af4752399170b2cfc9545 Assembly-CSharp.dll:.ScreenFader
 7f076a8f4ed044d82d15c8d78d52b58e Assembly-CSharp.dll:.Activation
 c735b1baf9c35d0203cdcb140cbb444a Assembly-CSharp.dll:.LevelManager
 4416bdfac9fbc4e74143c9af3d91bd3b Assembly-CSharp.dll:.SkillComponents
-b422e669e82169ede3e5b96ceb482dfa Assembly-CSharp.dll:.Gradient

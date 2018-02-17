@@ -14,8 +14,9 @@ public class SceneManagerCharbz : MonoBehaviour {
 
 	public void ReloadScene()
 	{
-        if (Time.timeScale == 0)
-            Time.timeScale = 1;
+		if (Time.timeScale == 0) {
+			Time.timeScale = 1;
+		}
 		GameManager.Instance.ReloadLevel ();
 		
 	}

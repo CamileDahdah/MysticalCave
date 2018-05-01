@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour {
 
 	public GameObject next, previous;
-	public GameObject levelsPanel, introPanel, menuPanel, settingsPanel;
-	public GameObject levelsParent;
+	public GameObject levelsPanel, menuPanel, settingsPanel, worldPanel, skillsPanel;
+	public GameObject levelsParent, worldCanvas;
 	int levelCounter, maxLevel;
 	public List<Texture> levelsImages;
 	public Text levelText;
 	public static Menu instance;
+	public Text worldScore;
+	int num = 0;
 
 	void Start () {
 		
@@ -24,6 +26,7 @@ public class Menu : MonoBehaviour {
 		levelCounter = 1;
 		GameManager.currentLevel = levelCounter;
 		maxLevel = levelsImages.Count;
+		SetWorldScore ();
 	}
 
 	void OnEnable(){
@@ -32,9 +35,26 @@ public class Menu : MonoBehaviour {
 
 	public void Play(){
 
-		levelsPanel.SetActive (true);
+		worldPanel.SetActive (true);
 		menuPanel.SetActive (false);
+		worldCanvas.SetActive (true);
+
+	}
+
+	public void WorldClick(){
+
+		worldPanel.SetActive (false);
+		levelsPanel.SetActive (true);
 		ManageButtons ();
+		worldCanvas.SetActive (false);
+	}
+
+	public void HomeButtonClick(){
+		worldPanel.SetActive (false);
+		menuPanel.SetActive (true);
+		worldCanvas.SetActive (false);
+		skillsPanel.SetActive (false);
+		settingsPanel.SetActive (false);
 	}
 
 	public void NextLevel(){
@@ -72,14 +92,32 @@ public class Menu : MonoBehaviour {
 	}
 
 	public void MenuClick(){
-		
+
+		worldCanvas.SetActive (true);
+		worldPanel.SetActive (true);
 		levelsPanel.SetActive (false);
-		settingsPanel.SetActive (false);
-		menuPanel.SetActive (true);
 	}
 
 	public void SettingsClick(){
-
 		settingsPanel.SetActive (true);
 	}
+
+	public void SkillsClick(){
+		skillsPanel.SetActive (true);
+		menuPanel.SetActive (false);
+	}
+
+	public void SettingsToMenu(){
+
+		menuPanel.SetActive (true);
+		settingsPanel.SetActive (false);
+	}
+
+	public void SetWorldScore(){
+
+		int num = GameManager.Instance.GetWorldScore ();
+
+		worldScore.text = num + "/18";
+	}
+
 }

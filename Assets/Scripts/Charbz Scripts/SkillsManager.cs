@@ -17,6 +17,7 @@ public class SkillsManager : MonoBehaviour
         doubleTapLight,
         count
     }
+
     public Text totalPointsText;
     public Transform skillPanel;
     public GameObject[] skill;
@@ -27,16 +28,16 @@ public class SkillsManager : MonoBehaviour
     List<SkillComponents> components = new List<SkillComponents>();
     List<GameObject> skillsObjects = new List<GameObject>();
 
-    void Awake()
-    {
+    void Awake(){
+		
    //     PlayerPrefs.SetInt("totalpoints", 0);
         int mytotalcost = 0;
         totalSkills = skill.Length;
         maxPoints = ScoreManager.ConvertToSkills();
 
-        for (int i = 0; i < totalSkills; i++)
-        {
-            GameObject skills = (GameObject)Instantiate(skill[i]);
+        for (int i = 0; i < totalSkills; i++){
+			
+            GameObject skills = (GameObject) Instantiate (skill[i]);
             skills.transform.SetParent(skillPanel);
             skillsObjects.Add(skills);
             components.Add(skills.GetComponent<SkillComponents>());
@@ -53,8 +54,7 @@ public class SkillsManager : MonoBehaviour
 
     }
 
-    void ResetAll()
-    {
+    void ResetAll(){
 
 
         UpdateText(maxPoints);
@@ -73,54 +73,54 @@ public class SkillsManager : MonoBehaviour
         }
 
     }
-    void Update()
-    {
+
+    void Update(){
 
         // totalPoints = 0;
-        for (int i = 0; i < totalSkills; i++)
-        {
+        for (int i = 0; i < totalSkills; i++){
+			
             GameObject skills = skillsObjects[i];
             GameObject plusButton = skills.transform.GetChild(1).gameObject;
             GameObject minusButton = skills.transform.GetChild(2).gameObject;
             int upgrade = components[i].GetUpgrade();
 
-            if (upgrade == 0)
-                minusButton.SetActive(false);
-            else
-                minusButton.SetActive(true);
+			if (upgrade == 0) {
+				minusButton.SetActive (false);
+			} else {
+				minusButton.SetActive (true);
+			}
 
             int cost = components[i].CostUpgrade(components[i].GetUpgrade());
 
-            if (cost > totalPoints || upgrade >= components[0].GetMaxUpgrade())
-                plusButton.SetActive(false);
-            else
-                plusButton.SetActive(true);
+			if (cost > totalPoints || upgrade >= components [0].GetMaxUpgrade ()) {
+				plusButton.SetActive (false);
+			} else {
+				plusButton.SetActive (true);
+			}
+
         }
+
         SaveUpgradesValues();
     }
 
-    public int GetTotalPoints()
-    {
+    public int GetTotalPoints(){
         return totalPoints;
     }
 
-    public void SetTotalPoints(int points)
-    {
+	public void SetTotalPoints(int points){
         totalPoints = points;
     }
 
-    public void UpdateText(int total)
-    {
-        totalPointsText.text = "Remaining Skills: " + total.ToString();
+    public void UpdateText(int total){
+        totalPointsText.text = total.ToString();
     }
 
-    public int GetMaxPoints()
-    {
+    public int GetMaxPoints(){
         return maxPoints;
     }
 
-    public void Reset()
-    {
+    public void Reset(){
+		
         for (int i = 0; i < totalSkills; i++)
             Destroy(skillsObjects[i]);
 
@@ -129,8 +129,8 @@ public class SkillsManager : MonoBehaviour
 
         ResetAll();
     }
-    void SaveUpgradesValues()
-    {
+
+    void SaveUpgradesValues(){
 
         for (int i = 0; i < totalSkills; i++)
         {
@@ -139,15 +139,17 @@ public class SkillsManager : MonoBehaviour
 
         }
     }
-    void OnDisable()
-    {
+
+    void OnDisable(){
 
         for (int i = 0; i < totalSkills; i++)
         {
             PlayerPrefs.SetInt("skill" + (i + 1), components[i].GetUpgrade());
+			Debug.Log ("skill" + (i + 1) + components [i].GetUpgrade ());
 
         }
-        for (int i = 1; i < 5; i++)
+
+        for (int i = 1; i < 4; i++)
         {
             additionalWaves[(i - 1)] = SkillComponents.GetDescriptionValue(i, components[i].GetUpgrade());
 
@@ -155,9 +157,13 @@ public class SkillsManager : MonoBehaviour
 
         PlayerPrefs.SetInt("percentagehealth", SkillComponents.GetDescriptionValue(0, components[0].GetUpgrade()));
         PlayerPrefs.SetInt("plusnormalwave", additionalWaves[0]);
-		PlayerPrefs.SetInt("plusattackwave", additionalWaves[1]);
-        PlayerPrefs.SetInt("pluslightwave", additionalWaves[2]);
-        PlayerPrefs.SetInt("plusbouncewave", additionalWaves[3]);
+		PlayerPrefs.SetInt("pluslightwave", additionalWaves[1]);
+		PlayerPrefs.SetInt("plusbouncewave", additionalWaves[2]);
+		//PlayerPrefs.SetInt("plusattackwave", additionalWaves[4]);
         PlayerPrefs.SetInt("CostSkillPoints", maxPoints - totalPoints);
+		Debug.Log (maxPoints - totalPoints);
+		PlayerPrefs.Save ();
+		RemainingSkillText.instance.UpdateScoreText ();
     }
+
 }

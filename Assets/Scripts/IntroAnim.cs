@@ -16,6 +16,7 @@ public class IntroAnim : MonoBehaviour {
 	public AudioClip audioFinish;
 	public GameObject bat;
 	public static IntroAnim instance;
+	public GameObject HUDCanvas;
 
 	void Awake(){
 
@@ -40,13 +41,14 @@ public class IntroAnim : MonoBehaviour {
 	}
 
 	void Start(){
+		
 		if (LevelManager.levelID != 1) {
 			if (introCamera) {
 				StartCoroutine ("AnimatePortal");
 			}
 		}
 		else {
-			GetComponent<Animator> ().enabled = true;
+			//GetComponent<Animator> ().enabled = true;
 		}
 	
 		bat.GetComponent<PlayerHealth> ().enabled = false;
@@ -58,11 +60,15 @@ public class IntroAnim : MonoBehaviour {
 		Reset.instance.ResetUI ();
 		timeElapsed = 0;
 		timer = 0;
+		if(LevelManager.levelID != 1){
 	    Spawn ();
+		}
+
 	}
 
 	IEnumerator AnimatePortal(){
-		
+
+		Debug.Log ("?");
 		yield return new WaitForSeconds (2.3f);
 
 		bat.transform.position = spawnPoint.GetChild (0).position;
@@ -84,20 +90,28 @@ public class IntroAnim : MonoBehaviour {
 
 
 	void Update(){
+		
 		timer += Time.deltaTime;
 	}
 
-	void Spawn(){
+	public void Spawn(){
+
 			StartCoroutine ("WaitSpawn");
 	}
 
 	public void EndSound(){
+		
 		bat.GetComponent<AudioSource> ().clip = audioFinish;
 		bat.GetComponent<AudioSource> ().Play ();
 	}
 
 	IEnumerator EndIntroAnim(){
+		
 		yield return new WaitForSeconds (.5f);
+
+		if (HUDCanvas) {
+			HUDCanvas.SetActive (true);
+		}
 		GetComponent<Animator> ().enabled = false;
 		Reset.instance.EnableEveryUI();
 		foreach (BoxCollider box in bat.GetComponents<BoxCollider>()) {
@@ -110,11 +124,26 @@ public class IntroAnim : MonoBehaviour {
 	}
 		
 	IEnumerator WaitSpawn(){
-		if (LevelManager.levelID != 1) {
+		
+		//if (LevelManager.levelID != 1) {
 			yield return new WaitForSeconds (5f);
-		} else {
-			yield return new WaitForSeconds (11f);
-		}
+
+			CameraSwitch.instance.SwitchToMainCamera (introCamera);
+			Scale.instance._Scale = Scale.instance.GetInitalScale ();
+
+			if (spawnPoint != null) {
+				bat.transform.position = spawnPoint.position;
+				bat.transform.localRotation = spawnPoint.rotation;
+			}
+
+			bat.GetComponent<PlayerHealth> ().enabled = true;
+			StartCoroutine ("EndIntroAnim");
+		//} 
+		
+	
+	}
+		
+	public void SpawnLevel1(){
 		
 		CameraSwitch.instance.SwitchToMainCamera (introCamera);
 		Scale.instance._Scale = Scale.instance.GetInitalScale ();
@@ -125,18 +154,21 @@ public class IntroAnim : MonoBehaviour {
 		}
 
 		bat.GetComponent<PlayerHealth> ().enabled = true;
-		StartCoroutine("EndIntroAnim");
+		StartCoroutine ("EndIntroAnim");
+
 	}
-		
 
 	public void EndAnim(){
 		Finish ();
 	}
 
 	void Finish(){
+		
 		timeElapsed = timer;
 		finish = true;
 		StartCoroutine(screenFader.FinishToBlack());
+
+
 		ScoreManager.UpdateScore(
 			LevelManager.levelID,
 			0, //EnemyAttack.enemyCounter,

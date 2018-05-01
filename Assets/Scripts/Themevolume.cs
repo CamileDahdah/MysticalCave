@@ -10,11 +10,11 @@ public class Themevolume : MonoBehaviour
     {
         themeSong = GetComponent<AudioSource>();
 
-        float volf = PlayerPrefs.GetFloat("themevolume", 0.7f);
+        //float volf = PlayerPrefs.GetFloat("themevolume", 0.7f);
 
-        themeSlider.value = volf;
+        //themeSlider.value = volf;
 
-        themeSong.volume = themeSlider.value;
+       // themeSong.volume = themeSlider.value;
 
 
     }

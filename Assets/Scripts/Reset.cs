@@ -7,62 +7,130 @@ public class Reset :MonoBehaviour{
   
 
     public GameObject baat;
-    public GameObject joyStick, waveSelection;
+    public GameObject joyStick, waveSelection, joyStickZone;
     public TouchManager touchManager;
     public FreeMove freeMove;
-    public SpriteRenderer finishFlag,batEyes;
-    public GameObject pauseButton, mapCanvas;
+    public GameObject pauseButton;
     public static Reset instance = null;
-	public GameObject HUDCanvas;
+	public GameObject mainPanel;
 
-    void Awake()
-    {
-        //Check if instance already exists
-        if (instance == null)
 
-            //if not, set instance to this
-            instance = this;
+    void Awake(){
+  
+		if (instance == null) {
+			instance = this;
 
-        //If instance already exists and it's not this:
-        else if (instance != this)
-
-            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+		}else {
             Destroy(gameObject);
+		}
     }
 
-	//remove every UI excluding pause button and map button for now
+	//remove every UI excluding pause button
     public void ResetUI() {
 
         touchManager.enabled = false;      
 		freeMove.enabled = false; 
-		joyStick.SetActive(false); 
+		joyStick.SetActive(false); 	
 		waveSelection.SetActive(false);
-		HUDCanvas.SetActive (false);
 
     }
 
-    public void EnableMapUIs() {
-        finishFlag.enabled = !finishFlag.enabled;
-        batEyes.enabled = !batEyes.enabled;
-        baat.SetActive(!baat.activeSelf); 
-    }
+	//remove every UI including pause button
+	public void PauseUI() {
+
+		touchManager.enabled = false;      
+		freeMove.enabled = false; 
+		joyStick.SetActive(false); 	
+		pauseButton.SetActive (false);
+	}
+
 	//except pause button
     public void RemoveEveryUI() {
         ResetUI();
-       // pauseButton.SetActive(false);
-        //mapCanvas.SetActive(false);
+
     }
 
-    public void EnableEveryUI()
-    {
+	//including pause button
+	public void RemoveAllUI() {
+		ResetUI();
+		pauseButton.SetActive (false);
+	}
+
+    public void EnableEveryUI(){
+		
 		touchManager.enabled = true;      
 		freeMove.enabled = true; 
-		joyStick.SetActive(true); 
 		waveSelection.SetActive(true);
         pauseButton.SetActive(true);
-//        mapCanvas.SetActive(true);
-		HUDCanvas.SetActive (true);
+
     }
 
+	public void EnableResumeUI(){
+
+		touchManager.enabled = true;      
+		freeMove.enabled = true; 
+		pauseButton.SetActive(true);
+
+	}
+		
+	public void Flip(string direction){
+
+		float waveSelectionXPosition = waveSelection.GetComponent<RectTransform> ().anchoredPosition.x;
+		float waveSelectionYPosition = waveSelection.GetComponent<RectTransform> ().anchoredPosition.y;
+	
+		float anchorMinX, zoneAnchorMinX;
+
+		float scaleWaveSelectorX;
+
+		float joyStickZoneXPosition = joyStickZone.GetComponent<RectTransform> ().anchoredPosition.x;
+		float joyStickZoneYPosition = joyStickZone.GetComponent<RectTransform> ().anchoredPosition.y;
+		float anchorMaxX, zoneAnchorMaxX;
+
+		bool newDirection = false;
+
+
+		if (direction == "right") {
+			scaleWaveSelectorX = 1;
+			anchorMinX = anchorMaxX = 1;
+			zoneAnchorMinX = zoneAnchorMaxX = 0;
+
+			if (waveSelectionXPosition > 0) {
+				joyStickZoneXPosition = - joyStickZoneXPosition;
+				waveSelectionXPosition = - waveSelectionXPosition;
+				newDirection = true;
+			}
+
+		} else {
+			anchorMinX = anchorMaxX = 0;
+			zoneAnchorMinX = zoneAnchorMaxX = 1;
+			scaleWaveSelectorX = - 1;
+
+			if (waveSelectionXPosition < 0) {
+				joyStickZoneXPosition = - joyStickZoneXPosition;
+				waveSelectionXPosition = - waveSelectionXPosition;
+				newDirection = true;
+			}
+		}
+
+		if (newDirection) {
+			
+			waveSelection.GetComponent<RectTransform> ().anchorMin = new Vector2 (anchorMinX, 0);
+			waveSelection.GetComponent<RectTransform> ().anchorMax = new Vector2 (anchorMaxX, 0);
+			waveSelection.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (waveSelectionXPosition, waveSelectionYPosition);
+			waveSelection.GetComponent<RectTransform> ().localScale = new Vector3 (scaleWaveSelectorX, 1, 1);
+
+			foreach (Transform button in waveSelection.transform) {
+
+				button.localScale = new Vector3 (scaleWaveSelectorX, 1, 1);
+
+			}
+
+			joyStickZone.GetComponent<RectTransform> ().anchorMin = new Vector2 (zoneAnchorMaxX, 0);
+			joyStickZone.GetComponent<RectTransform> ().anchorMax = new Vector2 (zoneAnchorMaxX, 1);
+			joyStickZone.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (joyStickZoneXPosition, joyStickZoneYPosition);
+
+		}
+
+	}
 
 }

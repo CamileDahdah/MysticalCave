@@ -40,7 +40,7 @@ public class EndAnim : MonoBehaviour {
 			if (GetComponent<BoxCollider> ()) {
 				once = false;
 				GetComponent<BoxCollider> ().enabled = false;
-				Reset.instance.RemoveEveryUI ();
+				Reset.instance.RemoveAllUI ();
 				CameraSwitch.instance.SwitchCamera (endCamera);
 				StartCoroutine ("Coroutine_AnimateBatToEnd");
 			}

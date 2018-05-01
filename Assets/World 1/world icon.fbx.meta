@@ -1,0 +1,539 @@
+fileFormatVersion: 2
+guid: 918fe7a7a570a49279827717091aa8c4
+timeCreated: 1524394635
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: barrel:pCylinder1
+    100002: chest:group1
+    100004: chest:pCube1
+    100006: chest:pCylinder1
+    100008: combined:group1
+    100010: combined:group2
+    100012: combined:group3
+    100014: combined:group4
+    100016: combined:magic_circle:pCylinder1
+    100018: combined:monster:pPlane1
+    100020: combined:pCone1
+    100022: combined:pCube1
+    100024: combined:pCube1 1
+    100026: combined:pCube1 2
+    100028: combined:pCube2
+    100030: combined:pCube2 1
+    100032: combined:pCube2 2
+    100034: combined:rock_script:pCube1
+    100036: combined:rock_script:pCube2
+    100038: combined:VRayLightDome1
+    100040: fire1:fluid1
+    100042: fire1:fluidEmitter1
+    100044: fire2:fluid1
+    100046: fire2:fluidEmitter1
+    100048: fire3:fluid1
+    100050: fire3:fluidEmitter1
+    100052: fire4:fluid1
+    100054: fire4:fluidEmitter1
+    100056: fire5:fluid1
+    100058: fire5:fluidEmitter1
+    100060: fire:fluid1
+    100062: fire:fluidEmitter1
+    100064: group
+    100066: group4
+    100068: group5
+    100070: group6
+    100072: group7
+    100074: group8
+    100076: light:pCylinder1
+    100078: pCone1
+    100080: pCone2
+    100082: pCube1
+    100084: pCylinder1
+    100086: pCylinder1 1
+    100088: pCylinder10
+    100090: pCylinder11
+    100092: pCylinder12
+    100094: pCylinder2
+    100096: pCylinder3
+    100098: pCylinder4
+    100100: pCylinder5
+    100102: pCylinder6
+    100104: pCylinder7
+    100106: pCylinder8
+    100108: pCylinder9
+    100110: pointLight1
+    100112: pointLight2
+    100114: pointLight3
+    100116: pointLight4
+    100118: pointLight5
+    100120: pointLight6
+    100122: pPlane1
+    100124: pPlane2
+    100126: pPlane3
+    100128: pPlane4
+    100130: pPlane5
+    100132: pPlane6
+    100134: pPlane7
+    100136: tomb2:group1
+    100138: tomb2:group2
+    100140: tomb2:group3
+    100142: tomb2:pCube1
+    100144: tomb2:pCube1 1
+    100146: tomb2:pCube2
+    100148: tomb2:pCube2 1
+    100150: tomb2:pCube3
+    100152: tomb2:pCube3 1
+    100154: tomb2:tomb:pCube1
+    100156: tomb2:tomb:pCube2
+    100158: tomb2:tomb:pCube3
+    100160: urn:pCylinder1
+    100162: VRayLightRect1
+    100164: VRayLightRect2
+    100166: //RootNode
+    400000: barrel:pCylinder1
+    400002: chest:group1
+    400004: chest:pCube1
+    400006: chest:pCylinder1
+    400008: combined:group1
+    400010: combined:group2
+    400012: combined:group3
+    400014: combined:group4
+    400016: combined:magic_circle:pCylinder1
+    400018: combined:monster:pPlane1
+    400020: combined:pCone1
+    400022: combined:pCube1
+    400024: combined:pCube1 1
+    400026: combined:pCube1 2
+    400028: combined:pCube2
+    400030: combined:pCube2 1
+    400032: combined:pCube2 2
+    400034: combined:rock_script:pCube1
+    400036: combined:rock_script:pCube2
+    400038: combined:VRayLightDome1
+    400040: fire1:fluid1
+    400042: fire1:fluidEmitter1
+    400044: fire2:fluid1
+    400046: fire2:fluidEmitter1
+    400048: fire3:fluid1
+    400050: fire3:fluidEmitter1
+    400052: fire4:fluid1
+    400054: fire4:fluidEmitter1
+    400056: fire5:fluid1
+    400058: fire5:fluidEmitter1
+    400060: fire:fluid1
+    400062: fire:fluidEmitter1
+    400064: group
+    400066: group4
+    400068: group5
+    400070: group6
+    400072: group7
+    400074: group8
+    400076: light:pCylinder1
+    400078: pCone1
+    400080: pCone2
+    400082: pCube1
+    400084: pCylinder1
+    400086: pCylinder1 1
+    400088: pCylinder10
+    400090: pCylinder11
+    400092: pCylinder12
+    400094: pCylinder2
+    400096: pCylinder3
+    400098: pCylinder4
+    400100: pCylinder5
+    400102: pCylinder6
+    400104: pCylinder7
+    400106: pCylinder8
+    400108: pCylinder9
+    400110: pointLight1
+    400112: pointLight2
+    400114: pointLight3
+    400116: pointLight4
+    400118: pointLight5
+    400120: pointLight6
+    400122: pPlane1
+    400124: pPlane2
+    400126: pPlane3
+    400128: pPlane4
+    400130: pPlane5
+    400132: pPlane6
+    400134: pPlane7
+    400136: tomb2:group1
+    400138: tomb2:group2
+    400140: tomb2:group3
+    400142: tomb2:pCube1
+    400144: tomb2:pCube1 1
+    400146: tomb2:pCube2
+    400148: tomb2:pCube2 1
+    400150: tomb2:pCube3
+    400152: tomb2:pCube3 1
+    400154: tomb2:tomb:pCube1
+    400156: tomb2:tomb:pCube2
+    400158: tomb2:tomb:pCube3
+    400160: urn:pCylinder1
+    400162: VRayLightRect1
+    400164: VRayLightRect2
+    400166: //RootNode
+    2300000: barrel:pCylinder1
+    2300002: chest:pCube1
+    2300004: chest:pCylinder1
+    2300006: combined:magic_circle:pCylinder1
+    2300008: combined:monster:pPlane1
+    2300010: combined:pCone1
+    2300012: combined:pCube1
+    2300014: combined:pCube1 1
+    2300016: combined:pCube1 2
+    2300018: combined:pCube2
+    2300020: combined:pCube2 1
+    2300022: combined:pCube2 2
+    2300024: combined:rock_script:pCube1
+    2300026: combined:rock_script:pCube2
+    2300028: light:pCylinder1
+    2300030: pCone1
+    2300032: pCone2
+    2300034: pCube1
+    2300036: pCylinder1
+    2300038: pCylinder1 1
+    2300040: pCylinder10
+    2300042: pCylinder11
+    2300044: pCylinder12
+    2300046: pCylinder2
+    2300048: pCylinder3
+    2300050: pCylinder4
+    2300052: pCylinder5
+    2300054: pCylinder6
+    2300056: pCylinder7
+    2300058: pCylinder8
+    2300060: pCylinder9
+    2300062: pPlane1
+    2300064: pPlane2
+    2300066: pPlane3
+    2300068: pPlane4
+    2300070: pPlane5
+    2300072: pPlane6
+    2300074: pPlane7
+    2300076: tomb2:pCube1
+    2300078: tomb2:pCube1 1
+    2300080: tomb2:pCube2
+    2300082: tomb2:pCube2 1
+    2300084: tomb2:pCube3
+    2300086: tomb2:pCube3 1
+    2300088: tomb2:tomb:pCube1
+    2300090: tomb2:tomb:pCube2
+    2300092: tomb2:tomb:pCube3
+    2300094: urn:pCylinder1
+    3300000: barrel:pCylinder1
+    3300002: chest:pCube1
+    3300004: chest:pCylinder1
+    3300006: combined:magic_circle:pCylinder1
+    3300008: combined:monster:pPlane1
+    3300010: combined:pCone1
+    3300012: combined:pCube1
+    3300014: combined:pCube1 1
+    3300016: combined:pCube1 2
+    3300018: combined:pCube2
+    3300020: combined:pCube2 1
+    3300022: combined:pCube2 2
+    3300024: combined:rock_script:pCube1
+    3300026: combined:rock_script:pCube2
+    3300028: light:pCylinder1
+    3300030: pCone1
+    3300032: pCone2
+    3300034: pCube1
+    3300036: pCylinder1
+    3300038: pCylinder1 1
+    3300040: pCylinder10
+    3300042: pCylinder11
+    3300044: pCylinder12
+    3300046: pCylinder2
+    3300048: pCylinder3
+    3300050: pCylinder4
+    3300052: pCylinder5
+    3300054: pCylinder6
+    3300056: pCylinder7
+    3300058: pCylinder8
+    3300060: pCylinder9
+    3300062: pPlane1
+    3300064: pPlane2
+    3300066: pPlane3
+    3300068: pPlane4
+    3300070: pPlane5
+    3300072: pPlane6
+    3300074: pPlane7
+    3300076: tomb2:pCube1
+    3300078: tomb2:pCube1 1
+    3300080: tomb2:pCube2
+    3300082: tomb2:pCube2 1
+    3300084: tomb2:pCube3
+    3300086: tomb2:pCube3 1
+    3300088: tomb2:tomb:pCube1
+    3300090: tomb2:tomb:pCube2
+    3300092: tomb2:tomb:pCube3
+    3300094: urn:pCylinder1
+    4300000: combined:pCone1
+    4300002: combined:rock_script:pCube2
+    4300004: combined:rock_script:pCube1
+    4300006: combined:pCube2
+    4300008: combined:pCube1
+    4300010: combined:pCube2
+    4300012: combined:pCube1
+    4300014: combined:pCube2
+    4300016: combined:pCube1
+    4300018: combined:magic_circle:pCylinder1
+    4300020: combined:monster:pPlane1
+    4300022: pCone1
+    4300024: pCone2
+    4300026: light:pCylinder1
+    4300028: pCylinder1
+    4300030: pCylinder2
+    4300032: pCylinder3
+    4300034: pCylinder4
+    4300036: pCylinder5
+    4300038: pPlane1
+    4300040: pPlane2
+    4300042: pPlane3
+    4300044: pPlane4
+    4300046: pPlane5
+    4300048: pPlane6
+    4300050: pPlane7
+    4300052: urn:pCylinder1
+    4300054: pCylinder6
+    4300056: pCylinder7
+    4300058: pCylinder8
+    4300060: pCylinder9
+    4300062: pCylinder10
+    4300064: barrel:pCylinder1
+    4300066: pCylinder11
+    4300068: pCylinder12
+    4300070: chest:pCylinder1
+    4300072: chest:pCube1
+    4300074: pCylinder1
+    4300076: pCube1
+    4300078: tomb2:tomb:pCube1
+    4300080: tomb2:tomb:pCube2
+    4300082: tomb2:tomb:pCube3
+    4300084: tomb2:pCube1
+    4300086: tomb2:pCube2
+    4300088: tomb2:pCube3
+    4300090: tomb2:pCube1
+    4300092: tomb2:pCube2
+    4300094: tomb2:pCube3
+    9500000: //RootNode
+    10800000: pointLight1
+    10800002: pointLight2
+    10800004: pointLight3
+    10800006: pointLight4
+    10800008: pointLight5
+    10800010: pointLight6
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barrel_lambert2
+    second: {fileID: 2100000, guid: a0c57054f90ec4eca94fed7f4e1e046f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barrel_lambert3
+    second: {fileID: 2100000, guid: 337e21d74cfd04cd5b6824dbc806de5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chest_lambert2
+    second: {fileID: 2100000, guid: 47098f9f7b4524ba9b8a877699ef8ef7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chest_lambert3
+    second: {fileID: 2100000, guid: 8fe83fe2cbe47402599d17d2aec5bd49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chest_lambert4
+    second: {fileID: 2100000, guid: f9ce87905a2904b0a82629388e8a1840, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chest_lambert6
+    second: {fileID: 2100000, guid: 8fe83fe2cbe47402599d17d2aec5bd49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_lambert3
+    second: {fileID: 2100000, guid: 43d93640c10694a0891d280c698f8574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_magic_circle_lambert2
+    second: {fileID: 2100000, guid: c44411617c0a54e1bab40cdded948f11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_magic_circle_lambert3
+    second: {fileID: 2100000, guid: 5dca397a739e64e2181869546b4da1d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_monster_lambert2
+    second: {fileID: 2100000, guid: 7ec20237fc15b46ac948e031f2dfddad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert10
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert11
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert2
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert3
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert4
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert5
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert6
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert7
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert8
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: combined_rock_script_lambert9
+    second: {fileID: 2100000, guid: c9e2ebd297202404a8da0551124d803f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 020bb64c87a024b1687a5e7cf6621365, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 1fb50d4f62c7e42349cdeda4c4fe18d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: ca25dbfca25ae464db85bf96b50120ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: 3bd6de49650cc4880b00f0c52859acb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: b84d483ce03e24238a9b104a2f9a308c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tomb2_tomb_lambert2
+    second: {fileID: 2100000, guid: 43d93640c10694a0891d280c698f8574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: urn_lambert2
+    second: {fileID: 2100000, guid: 35feb557083904b11a6786b5d5810f15, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

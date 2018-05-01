@@ -72,7 +72,7 @@ public class SkillComponents : MonoBehaviour
                         description = reader.GetString(3);
 
                     }
-                    Debug.Log("\nCost:" + CostUpgrade(upgrades));
+                    Debug.Log("\nCost: " + CostUpgrade(upgrades));
 
                     dbConnection.Close();
                     reader.Close();
@@ -80,13 +80,14 @@ public class SkillComponents : MonoBehaviour
             }
         }
         UpdateDescriptionText.descriptionText.text = description + "\n"
-                           + "Cost:" + CostUpgrade(upgrades);
+                           + "Cost: " + CostUpgrade(upgrades);
 
     }
-    public static int GetDescriptionValue(int id, int upgrade)
-    {
-        if (upgrade == 0)
-            return 0;
+
+    public static int GetDescriptionValue(int id, int upgrade){
+		if (upgrade == 0) {
+			return 0;
+		}
         int finalAns = 0;
 
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
@@ -176,8 +177,8 @@ public class SkillComponents : MonoBehaviour
 
     }
 
-    public void IncreaseSkill()
-    {
+    public void IncreaseSkill(){
+		
         int cost = CostUpgrade(upgrades);
 
         if (managerSkill.GetTotalPoints() == 0 || managerSkill.GetTotalPoints() - cost < 0 || upgrades >= MaxUpgrades)
@@ -187,16 +188,16 @@ public class SkillComponents : MonoBehaviour
 
         GetDescription();
 
-
-
         managerSkill.SetTotalPoints(managerSkill.GetTotalPoints() - cost);
+
         managerSkill.UpdateText(managerSkill.GetTotalPoints());
+
         //if(upgrades < MAXUPGRADES)
         upgrades++;
     }
 
-    public void DecreaseSkill()
-    {
+    public void DecreaseSkill(){
+		
         int cost = CostUpgrade(upgrades - 1);
 
         if (skillNum == 0 || managerSkill.GetTotalPoints() == managerSkill.GetMaxPoints())

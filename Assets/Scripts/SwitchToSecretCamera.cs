@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SwitchToSecretCamera : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class SwitchToSecretCamera : MonoBehaviour {
 	public Color secretRoomTextColor;
 	public GameObject doorLeft;
 	public GameObject doorRight;
+	public NavMeshAgent navMeshAgent;
 
 	void Start()
 	{
@@ -27,6 +29,10 @@ public class SwitchToSecretCamera : MonoBehaviour {
 
 			if (counter == 1) 
 			{
+				if (navMeshAgent) {
+					navMeshAgent.isStopped = true;
+				}
+
 				gameObject.SetActive (false);
 				CameraSwitch.instance.SwitchCamera (secretRoomCamera);
 				transform.parent.GetComponent<Animator> ().enabled = true;

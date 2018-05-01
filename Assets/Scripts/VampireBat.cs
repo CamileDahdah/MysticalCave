@@ -32,7 +32,7 @@ public class VampireBat : MonoBehaviour
 	public Slingshot slingShot;
 	float bloodPositionY;
 	bool animate;
-	public Image radialImage;
+	public Image radialImage, radialImage2;
 	RigidbodyConstraints rbConstraints;
 
     void Awake(){
@@ -45,7 +45,6 @@ public class VampireBat : MonoBehaviour
        
         PlayerPrefs.SetFloat("oldvalue", vampSlider.value);
         PlayerPrefs.SetFloat("oldcolor", damageImage.color.a);
-		radialImage.fillAmount = 0;
         playerHealth = bat.GetComponent<PlayerHealth>();
         rigidBody = bat.GetComponent<Rigidbody>();
 		rbConstraints = rigidBody.constraints;
@@ -54,7 +53,8 @@ public class VampireBat : MonoBehaviour
 		
         vampBatDuration = 12f;
         vampSlider.value = PlayerPrefs.GetFloat("oldvalue");
-		radialImage.fillAmount = 0;
+		radialImage.fillAmount = 1;
+		radialImage2.fillAmount = 1;
         damageImage.color = new Color(255f, 0, 0, PlayerPrefs.GetFloat("oldcolor"));
         isAnimating = true;
         percentage = vampSlider.value / vampBatDuration;
@@ -66,7 +66,6 @@ public class VampireBat : MonoBehaviour
         isDrinking = true;
         newTimer = 0;
         otherTimer = 0;
-		slingShot.currentWaves [1] += Random.Range(1, 3); 
 
 		if (!animate) {
 			isVamp = true;
@@ -75,6 +74,7 @@ public class VampireBat : MonoBehaviour
 			vampLight.enabled = true;
 			vampSlider.gameObject.SetActive (true);
 			radialImage.gameObject.SetActive (true);
+			radialImage2.gameObject.SetActive (true);
 			damageImage.enabled = true;
 		} else {
 			baatAnimator.SetTrigger ("isDrinking");
@@ -133,6 +133,7 @@ public class VampireBat : MonoBehaviour
 							vampLight.enabled = true;
 							vampSlider.gameObject.SetActive (true);
 							radialImage.gameObject.SetActive (true);
+							radialImage2.gameObject.SetActive (true);
 							damageImage.enabled = true;
 
 							transform.position = new Vector3 (transform.position.x, thePosition, transform.position.z);
@@ -170,7 +171,8 @@ public class VampireBat : MonoBehaviour
         vampBatDuration = value;
         float finalvalue = value * percentage;
         vampSlider.value = finalvalue;
-		radialImage.fillAmount = 1 - finalvalue;
+		radialImage.fillAmount = finalvalue;
+		radialImage2.fillAmount = finalvalue;
     }
 
     public void Fade(){
@@ -186,6 +188,7 @@ public class VampireBat : MonoBehaviour
         damageImage.enabled = false;
         vampSlider.gameObject.SetActive(false);
 		radialImage.gameObject.SetActive(false);
+		radialImage2.gameObject.SetActive(false);
         playerHealth.vampDamage = false;
         isVamp = false;
         this.enabled = false;

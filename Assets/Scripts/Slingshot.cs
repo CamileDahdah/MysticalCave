@@ -51,7 +51,6 @@ public class Slingshot : MonoBehaviour{
         wavesAudio[1].volume = waveSlider.value;
         currentWaves = new int[4];
         currentWaves[0] = GameManager.normalWave;
-        currentWaves[1] = GameManager.attackWave;
         currentWaves[2] = GameManager.bounceWave;
         currentWaves[3] = GameManager.lightWave;
 		#if UNITY_EDITOR
@@ -144,7 +143,7 @@ public class Slingshot : MonoBehaviour{
 			Invoke ("AttackAnim", .45f);
 		
         }
-		if ((vampireBat.isVamp && numWaves == 1) || numWaves != 1) {
+		if (numWaves != 1) {
 			currentWaves [numWaves]--;
 			waveSelectionManager.UpdateText ();
 		}

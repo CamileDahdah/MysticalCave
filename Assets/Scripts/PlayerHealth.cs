@@ -56,15 +56,14 @@ public class PlayerHealth : MonoBehaviour
 
         startingHealth = GameManager.health;
 		#if UNITY_EDITOR
-		if(startingHealth == 0)
+		if(startingHealth == 0){
 			startingHealth = 100;
+		}
 		#endif
         currentHealth = startingHealth;
         healthSlider.maxValue = startingHealth;
         healthSlider.value = healthSlider.maxValue;
-        healthSlider.transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(startingHealth, 0);
-
-
+        //healthSlider.transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(startingHealth, 0);
 
     }
 
@@ -155,7 +154,7 @@ public class PlayerHealth : MonoBehaviour
             AnimateText(amount);
 		if (currentHealth > healthSlider.maxValue) {
 			healthSlider.maxValue = currentHealth;
-			healthSlider.transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(currentHealth, 0);
+			//healthSlider.transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(currentHealth, 0);
 		}
 			healthSlider.value = currentHealth;
 		

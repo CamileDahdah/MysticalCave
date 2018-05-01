@@ -76,8 +76,9 @@ public class ScreenFader : MonoBehaviour
         sceneManagerCharbz.ReloadScene();
 
     }
-    public IEnumerator FinishToBlack()
-    {
+
+    public IEnumerator FinishToBlack(){
+		
         reset.RemoveEveryUI();
         bat.GetComponent<Rigidbody>().isKinematic = true;
 		blackImage.enabled = true;

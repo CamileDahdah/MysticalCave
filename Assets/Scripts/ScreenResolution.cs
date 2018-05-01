@@ -99,13 +99,13 @@ public class ScreenResolution : MonoBehaviour {
 		
 		PlayerPrefs.SetInt("screenResolution", selectedIndex);
 		PlayerPrefs.Save ();
-		Menu.instance.MenuClick ();
+		Menu.instance.HomeButtonClick ();
 
 	}
 
 	void GoToMainMenu (){
 
-		Menu.instance.MenuClick ();
+		Menu.instance.SettingsToMenu ();
 		SetResolution (firstIndex);
 
 	}

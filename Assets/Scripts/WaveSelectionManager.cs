@@ -1,70 +1,85 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+
 public class WaveSelectionManager : MonoBehaviour{
 	
     public GameObject waveEmitter;
 	Slingshot slingShot;
-	Text numLight, numAttack, numBounce, numNormal;
-	Button buttonAttack, buttonLight, buttonBounce, buttonNormal;
+	Text numLight, numBounce, numSparkles;
+	Button buttonAttack, buttonLight, buttonBounce, buttonSparkles;
+	Image imageAttack, imageLight, imageBounce, imageSparkles;
 	public VampireBat vampirebat;
 	int oldWave;
-	public Image radialImage;
+	Color disabledImageColor = new Color(0f,0f,0f,1f);
+	Color enabledImageColor = new Color(1f,1f,1f,1f);
 
     void Start(){
        
         slingShot = waveEmitter.GetComponent<Slingshot>();
 		GameObject ButtonAttack = transform.Find("Button Attack").gameObject;
-        GameObject ButtonLight = transform.Find("Button Light").gameObject;
-        GameObject ButtonBounce = transform.Find("Button Bounce").gameObject;
-        GameObject ButtonNormal = transform.Find("Button Normal").gameObject;
-		buttonAttack = ButtonAttack.GetComponent<Button> ();
-		buttonLight = ButtonLight.GetComponent<Button> ();
-		buttonBounce = ButtonBounce.GetComponent<Button> ();
-		buttonNormal = ButtonNormal.GetComponent<Button> ();
+		GameObject ButtonLight = transform.Find("Button Light").gameObject;
+		GameObject ButtonBounce = transform.Find("Button Bounce").gameObject;
+		GameObject ButtonSparkles = transform.Find("Button Sparkles").gameObject;
+		buttonAttack = ButtonAttack.transform.GetChild(0).GetComponent<Button> ();
+		buttonLight = ButtonLight.transform.GetChild(0).GetComponent<Button> ();
+		buttonBounce = ButtonBounce.transform.GetChild(0).GetComponent<Button> ();
+		buttonSparkles = ButtonSparkles.transform.GetChild(0).GetComponent<Button> ();
+		imageAttack = ButtonAttack.transform.GetChild(2).GetComponent<Image> ();
+		imageLight = ButtonLight.transform.GetChild(1).GetComponent<Image> ();
+		imageBounce = ButtonBounce.transform.GetChild(1).GetComponent<Image> ();;
+		imageSparkles = ButtonSparkles.transform.GetChild(1).GetComponent<Image> ();;
         numLight = ButtonLight.transform.GetChild(2).GetComponent<Text>();
-        numAttack = ButtonAttack.transform.GetChild(2).GetComponent<Text>();
         numBounce = ButtonBounce.transform.GetChild(2).GetComponent<Text>();
-        numNormal = ButtonNormal.transform.GetChild(2).GetComponent<Text>();
+		numSparkles = ButtonSparkles.transform.GetChild(2).GetComponent<Text>();
         UpdateText();
     }
    
     public void SelectedButton(){
 
-        if (EventSystem.current.currentSelectedGameObject.name == "Button Normal"){
+		switch (EventSystem.current.currentSelectedGameObject.transform.parent.name) {
 
-			if (buttonNormal.interactable) {
+		case ("Button Sparkles"):
+
+			if (buttonSparkles) {
 				slingShot.numWaves = 0;
 			} else {
 				slingShot.numWaves = -99;
 			}
-        }
 
-        else if (EventSystem.current.currentSelectedGameObject.name == "Button Attack"){
+			break;
 
-			if (buttonAttack.interactable) {
-				slingShot.numWaves = 1;
-			} else {
-				slingShot.numWaves = -99;
-			}
-        }
-        else if (EventSystem.current.currentSelectedGameObject.name == "Button Bounce"){
+		case ("Button Bounce"):
 
-			if (buttonBounce.interactable) {
+			if (buttonBounce) {
 				slingShot.numWaves = 2;
 			} else {
 				slingShot.numWaves = -99;
 			}
-        }
-        else if (EventSystem.current.currentSelectedGameObject.name == "Button Light"){
 
-			if (buttonLight.interactable) {
+			break;
+
+		case ("Button Attack"):
+
+			if (buttonAttack) {
+				slingShot.numWaves = 1;
+			} else {
+				slingShot.numWaves = -99;
+			}
+
+			break;
+
+		case ("Button Light"):
+
+			if (buttonLight) {
 				slingShot.numWaves = 3;
 			} else {
 				slingShot.numWaves = -99;
 			}
 
-        }
+			break;
+
+		}
 
 		slingShot.SendWaveButton ();
 		UpdateText();
@@ -75,28 +90,18 @@ public class WaveSelectionManager : MonoBehaviour{
 		UpdateButtons();
 
         if (slingShot.currentWaves[3] < 100){
-			if(slingShot.currentWaves[3] == 0)
-				numLight.text = "X";
+			if(slingShot.currentWaves[3] <= 0)
+				numLight.text = "";
 			else
            		 numLight.text = "" + slingShot.currentWaves[3];
         }
 		else{
-			numAttack.text = "++";
-		}
-
-        if (slingShot.currentWaves[1] < 100){
-			if(slingShot.currentWaves[1] == 0)
-				numAttack.text = "X";
-			else
-				numAttack.text = "" + slingShot.currentWaves[1];
-        }
-		else{
-			numAttack.text = "++";
+			numLight.text = "++";
 		}
 
         if (slingShot.currentWaves[2] < 100){
-			if(slingShot.currentWaves[2] == 0)
-				numBounce.text = "X";
+			if(slingShot.currentWaves[2] <= 0)
+				numBounce.text = "";
 			else
 				numBounce.text = "" + slingShot.currentWaves[2];
         }
@@ -105,40 +110,52 @@ public class WaveSelectionManager : MonoBehaviour{
         }
 
         if (slingShot.currentWaves[0] < 100)
-			if(slingShot.currentWaves[0] == 0)
-				numNormal.text = "X";
+			if(slingShot.currentWaves[0] <= 0)
+				numSparkles.text = "";
 			else
-				numNormal.text = "" + slingShot.currentWaves[0];
+				numSparkles.text = "" + slingShot.currentWaves[0];
         else
-            numNormal.text = "++";
+            numSparkles.text = "++";
 				  
     }
 
     void UpdateButtons(){
+		
 		//Sparkle Wave
 		if (slingShot.currentWaves [0] <= 0) {
-			buttonNormal.interactable = false;
+			buttonSparkles.gameObject.SetActive(false);
+			imageSparkles.color = disabledImageColor;
 		} else {
-			buttonNormal.interactable = true;
+			buttonSparkles.gameObject.SetActive(true);
+			imageSparkles.color = enabledImageColor;
 		}
+
 		//Button Attack
-		if (slingShot.currentWaves [1] <= 0 || !vampirebat.isVamp) {
-			buttonAttack.interactable = false;
-			radialImage.gameObject.SetActive (false);
-		} else if (vampirebat.isVamp && slingShot.currentWaves [1] > 0) {
-			buttonAttack.interactable = true;
+		if ( !vampirebat.isVamp ) {
+			buttonAttack.gameObject.SetActive(false);
+			imageAttack.color = disabledImageColor;
+
+		} else if (vampirebat.isVamp) {
+			buttonAttack.gameObject.SetActive(true);
+			imageAttack.color = enabledImageColor;
 		}
+
 		//Bounce Wave
 		if (slingShot.currentWaves [2] <= 0) {
-			buttonBounce.interactable = false;
+			buttonBounce.gameObject.SetActive(false);
+			imageBounce.color = disabledImageColor;
 		} else {
-			buttonBounce.interactable = true;
+			buttonBounce.gameObject.SetActive(true);
+			imageBounce.color = enabledImageColor;
 		}
+
 		//Light Wave
 		if (slingShot.currentWaves [3] <= 0) {
-			buttonLight.interactable = false;
+			buttonLight.gameObject.SetActive(false);
+			imageLight.color = disabledImageColor;
 		} else {
-			buttonLight.interactable = true;
+			buttonLight.gameObject.SetActive(true);
+			imageLight.color = enabledImageColor;
 		}
     }
 

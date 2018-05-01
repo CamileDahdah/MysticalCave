@@ -7,7 +7,7 @@ public class Level1Lights : MonoBehaviour {
 	public List<GameObject> lights = new List<GameObject>();
 	private float maxIntensity;
 	private float limit = 0f;
-	float duration = 10f;
+	float duration = 14f;
 	float secondDuration = 1.5f;
 	private float maxParticleSize;
 	int particleCounter = 4;

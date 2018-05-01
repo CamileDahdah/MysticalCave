@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
 
 	#if UNITY_EDITOR
         dbPath = string.Format(@"Assets/StreamingAssets/{0}", databaseName);
+		//Debug.Log(Application.streamingAssetsPath + "/" + databaseName);
+
 
 	#elif UNITY_STANDALONE
         dbPath = Application.dataPath + "/StreamingAssets/"+databaseName;
@@ -79,13 +81,20 @@ public class GameManager : MonoBehaviour
             // open StreamingAssets directory and load the db ->
 
 	#if UNITY_ANDROID
-            var loadDb = new WWW("jar:file://" + Application.dataPath + "!/assets/" + databaseName);  
+            var loadDb = new WWW ("jar:file://" + Application.dataPath + "!/assets/" + databaseName);  
             // this is the path to your StreamingAssets in android
             while (!loadDb.isDone) { }  // CAREFUL here, for safety reasons you shouldn't
             //let this while loop unattended, place a timer and error check
             // then save to Application.persistentDataPath
             File.WriteAllBytes(filepath, loadDb.bytes);
+
+
+	#elif UNITY_IOS
+
+		File.Copy(Application.streamingAssetsPath + "/" + databaseName,  filepath);
+
 	#endif
+
           }
               var dbPath = filepath;
       
@@ -182,6 +191,7 @@ public class GameManager : MonoBehaviour
 	public void ReloadLevel(){
 		SetLevel(currentLevel);
 	}
+
     public void LoadLevel(){
 		
 		notActiveRoomsList.Clear ();
@@ -235,14 +245,15 @@ public class GameManager : MonoBehaviour
 					sqlQuery = "SELECT COUNT(*) FROM secretRooms";
 					dbCmd.CommandText = sqlQuery;
 					int allRooms = (int) (Int64) dbCmd.ExecuteScalar ();
-					Activation.allRooms = allRooms;
+					Activation.allRooms = 4;
 					dbConnection.Close ();
 				}
 				
 				String level = "Level" + currentLevel;
 
-				if (currentLevel < numLevels + 1)
+				if (currentLevel < numLevels + 1) {
 					instance.StartCoroutine (LoadALevel (level));
+				}
 				else {
 
 				}
@@ -286,6 +297,38 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+
+		public int GetWorldScore(){
+
+			int bloodCount = 0;
+
+
+			using (IDbConnection dbConnection = new SqliteConnection(connectionString))
+			{
+
+				dbConnection.Open();
+
+				using (IDbCommand dbCmd = dbConnection.CreateCommand())
+				{ 
+
+					string sqlQuery = String.Format("SELECT SUM(blood_score) FROM scoresLevel");
+
+					dbCmd.CommandText = sqlQuery;
+					bloodCount = (int) (Int64)dbCmd.ExecuteScalar();
+					
+
+				}
+				
+				dbConnection.Close ();
+			}
+
+			return bloodCount;
+
+		}
+
+
+
 #if UNITY_EDITOR
     static void UpdateDatabase(){    
 
@@ -308,6 +351,22 @@ public class GameManager : MonoBehaviour
                 }
      
             }
+
+			using (IDbCommand dbCmd = dbConnection.CreateCommand())
+			{
+				string sqlQuery;
+				for (int i = 1; i <= numLevels; i++)
+				{
+
+					sqlQuery = String.Format("UPDATE scoresLevel SET blood_score = " + 0
+					+ " WHERE level_id = " + i);
+
+					dbCmd.CommandText = sqlQuery;
+					dbCmd.ExecuteScalar();
+				}
+
+			}
+
 			using (IDbCommand dbCmd = dbConnection.CreateCommand())
 			{
 				string sqlQuery;

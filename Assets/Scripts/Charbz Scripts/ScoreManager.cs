@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     static int totalDamageScore = damageScore * 4;
     static int perfectScoreTime = 400;
     static int scoreSecretPath = 150;
-    static int scorePerSkill = 100;
+    static int scorePerSkill = 200;
   //static int damageConversion = 25;
     static int numLevels = GameManager.numLevels;
     static float[] scorePercentages = { .3f, .6f, .9f };
@@ -29,11 +29,17 @@ public class ScoreManager : MonoBehaviour
 	public AudioClip[] bloodClips;
     static ScoreManager scoreManager;
     private static string connectionString;
+	public GameObject highScore;
+	int numBlood = 0;
 
-    void Start()
-    {
+    void Start(){
        
-        scoreManager = this;
+		if (scoreManager == null) {
+			scoreManager = this;
+		} else {
+			Destroy (this);
+		}
+
         ScoreManager.scoreText = scoreGameObject.GetComponent<Text>();
         connectionString = GameManager.connectionString;
 		Application.targetFrameRate = 60;
@@ -48,8 +54,8 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    public static void UpdateScore(int levelID, int numEnemies, int timeElapsed, int secretPath, int damageTaken)
-    {
+    public static void UpdateScore(int levelID, int numEnemies, int timeElapsed, int secretPath, int damageTaken){
+		
         int tempScore = 0;
         int minimumScore = LevelManager.GetMinimumScore(); //get the minimum score from the levelManager
         int offset = LevelManager.GetOffset(); // get it from levelManager
@@ -60,71 +66,72 @@ public class ScoreManager : MonoBehaviour
         int scorePath = secretPath * scoreSecretPath;
         int scoreDamage = 0;
 
-        if (levelID == 1)
-            perfectScore = minimumScore + totalDamageScore + maxScorePath + maxScoreEnemies;
-        else
-            perfectScore = minimumScore + totalDamageScore + perfectScoreTime + maxScorePath + maxScoreEnemies;
+		if (levelID == 1) {
+			perfectScore = minimumScore + totalDamageScore + maxScorePath + maxScoreEnemies;
+		} else {
+			perfectScore = minimumScore + totalDamageScore + perfectScoreTime + maxScorePath + maxScoreEnemies;
+		}
 
-        if (damageTaken > offset)
-        {
+        if (damageTaken > offset){
+			
             int realDamage = damageTaken - offset;
 
             scoreDamage = totalDamageScore - (realDamage);
 
-            if (scoreDamage < 0)
-                scoreDamage = 0;
+			if (scoreDamage < 0) {
+				scoreDamage = 0;
+			}
         }
 
-        else
+		else{
             scoreDamage = totalDamageScore;
+		}
 
         int timedifference = timeElapsed - minimumTime;
         int scoreTime = 0;
 
-        if (timedifference < 0)
-            scoreTime = perfectScoreTime;
-        else
-        {
+		if (timedifference < 0) {
+			scoreTime = perfectScoreTime;
+
+		}else{
+			
             float newPerc = ((minimumTime - (timeElapsed - minimumTime)) / (float)minimumTime);
-            if (newPerc > 0)
-            {
+
+            if (newPerc > 0){
                 float floatscore = (perfectScoreTime * newPerc);
 
                 scoreTime = (int)floatscore;
 
             }
         }
+
         Debug.Log(minimumScore);
         Debug.Log(scoreEnemies);
         Debug.Log(scorePath);
         Debug.Log(scoreTime);
         Debug.Log(scoreDamage);
         tempScore = minimumScore + scoreEnemies + scorePath + scoreTime + scoreDamage;
-
-        if (tempScore > scoresPerLevel[levelID - 1])
-        {
+		Debug.Log (tempScore);
+        if (tempScore > scoresPerLevel[levelID - 1]){
 
             int tempLevelScore = scoresPerLevel[levelID - 1];
-
 
             scoresPerLevel[levelID - 1] = tempScore;
             int totalScore = PlayerPrefs.GetInt("totalscore", 0);
             totalScore -= tempLevelScore;
             totalScore += tempScore;
             PlayerPrefs.SetInt("totalscore", totalScore);
-            scoreText.color = Color.red;
+			scoreManager.highScore.SetActive (true);
             score = tempScore;
-            scoreManager.StopCoroutine("CountTo");
-            scoreManager.StartCoroutine("CountTo", score);
+			CountScore (score);
             UpdateDatabase(levelID - 1, true);
-        }
-        else
-        {
 
-            scoreText.color = Color.black;
+        }else{
+			
+			scoreManager.highScore.SetActive (false);
+            //scoreText.color = Color.black;
             score = tempScore;
-            scoreManager.StopCoroutine("CountTo");
-            scoreManager.StartCoroutine("CountTo", score);
+			CountScore (score);
 			UpdateDatabase(levelID - 1, false);
         }
      //   int skillsPoints = ConvertToSkills();
@@ -132,18 +139,16 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    public int GetScore()
-    {
+    public int GetScore(){
         return PlayerPrefs.GetInt("totalscore", 0);
     }
 
-    public static int ConvertToSkills()
-    {
+    public static int ConvertToSkills(){
         return PlayerPrefs.GetInt("totalscore", 0) / scorePerSkill;
     }
 
-    public static void UpdateDatabase(int level_id, bool found)
-    {
+    public static void UpdateDatabase(int level_id, bool found){
+		
 		//UPDATE SCORE
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
@@ -154,8 +159,8 @@ public class ScoreManager : MonoBehaviour
             {
              
 
-                if (found)
-                {
+                if (found){
+					
                     sqlQuery = String.Format("UPDATE scoresLevel SET score = " +
                       scoresPerLevel[level_id]
                         + " WHERE level_id = " + (level_id + 1));
@@ -163,24 +168,39 @@ public class ScoreManager : MonoBehaviour
 					dbCmd.ExecuteScalar();
 
                 }
-              //  else
-                //    sqlQuery = String.Format("Insert Into scoresLevel (level_id, score) Values (\"{0}\", \"{1}\")",
-                  //      level_id + 1, scoresPerLevel[level_id]);
-
-           
            
             }
+
+			//Update Blood Count
+			using (IDbCommand dbCmd = dbConnection.CreateCommand())
+			{
+				if (found) {
+					
+					sqlQuery = String.Format ("UPDATE scoresLevel SET blood_score = " + scoreManager.numBlood
+						+ " WHERE level_id = " + (level_id + 1));
+
+					dbCmd.CommandText = sqlQuery;
+					dbCmd.ExecuteScalar ();
+				}
+
+			}
+
 			//UPDATE SECRETROOM
 			using (IDbCommand dbCmd = dbConnection.CreateCommand())
 			{
 				
 				if (LevelManager.instance.activatedRoomList.Count > 0) {
+					
 					String count = "";
+
 					for (int i = 0; i < LevelManager.instance.activatedRoomList.Count; i++) {
-						if (i != LevelManager.instance.activatedRoomList.Count - 1)
+						
+						if (i != LevelManager.instance.activatedRoomList.Count - 1) {
 							count += LevelManager.instance.activatedRoomList [i] + ",";
-						else
+
+						} else {
 							count += LevelManager.instance.activatedRoomList [i];
+						}
 
 					}
 
@@ -198,12 +218,12 @@ public class ScoreManager : MonoBehaviour
 			}
         }
     }
-    public void LoadLevels()
-    {
+
+    public void LoadLevels(){
+		
         scoresPerLevel = new int[numLevels];
 
-        for (int i = 0; i < numLevels; i++)
-        {
+        for (int i = 0; i < numLevels; i++){
             scoresPerLevel[i] = -1;
         }
 
@@ -219,8 +239,8 @@ public class ScoreManager : MonoBehaviour
 
                 using (IDataReader reader = dbCmd.ExecuteReader())
                 {
-                    while (reader.Read())
-                    {
+                    while (reader.Read()){
+						
                         int id = reader.GetInt32(1) - 1;
                         int score = reader.GetInt32(2);
 
@@ -236,25 +256,35 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    IEnumerator CountTo(int target)
-    {
+    IEnumerator CountTo(int target){
+		
         int counter = 0;
-        float[] differentScores = { perfectScore * scorePercentages[0],
+
+        float[] differentScores = 
+		{
+			perfectScore * scorePercentages[0],
             perfectScore * scorePercentages[1],
-            perfectScore * scorePercentages[2] };
+            perfectScore * scorePercentages[2] 
+		};
+
         scoreText.text = "" + 0;
+
         yield return new WaitForSeconds(1.2f);
 		GetComponent<AudioSource> ().Play ();
         int start = 0;
-        for (float timer = 0; timer < duration; timer += Time.deltaTime)
-        {
+
+		scoreManager.numBlood = 0;
+
+        for (float timer = 0; timer < duration; timer += Time.deltaTime){
+			
             float progress = timer / duration;
-            score = (int)Mathf.Lerp(start, target, progress);
+            score = (int) Mathf.Lerp(start, target, progress);
             scoreText.text = "" + score;
-            if (counter < bloodCount && score > differentScores[counter])
-            {
-				if (!bloodImages [counter].activeSelf)
-				{
+
+			if (counter < bloodCount && score > differentScores[counter]){
+				
+				if (!bloodImages [counter].activeSelf){
+					
 					bloodImages [counter].SetActive (true);
 					SoundManager.playCollectibleAudio (bloodClips [counter]);
 				}
@@ -262,10 +292,35 @@ public class ScoreManager : MonoBehaviour
             }
             yield return null;
         }
-        scoreText.text = "" + target;
+
+
+		scoreText.text = "" + target;
+
+		scoreManager.numBlood += counter;
 		GetComponent<AudioSource> ().Stop();
         yield return null;
     }
+
+	private static void CountScore(int target){
+
+		int counter = 0;
+		float[] differentScores = { 
+			perfectScore * scorePercentages[0],
+			perfectScore * scorePercentages[1],
+			perfectScore * scorePercentages[2] 
+		};
+
+		foreach (int score in differentScores) {
+			if (target >= score) {
+				counter++;
+			}
+		}
+		scoreManager.numBlood = counter;
+
+		scoreManager.StopCoroutine("CountTo");
+		scoreManager.StartCoroutine("CountTo", target);
+
+	}
 
 
 }

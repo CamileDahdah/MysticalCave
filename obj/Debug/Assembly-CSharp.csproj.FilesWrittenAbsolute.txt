@@ -118,3 +118,5 @@
 /Users/camilledahdah/Desktop/Bat EDITOR 2.5 2017/Temp/bin/Debug/Unity.Cecil.dll
 /Users/camilledahdah/Desktop/Bat EDITOR 2.5 2017/Temp/bin/Debug/Unity.Cecil.Pdb.dll
 /Users/camilledahdah/Desktop/Bat EDITOR 2.5 2017/Temp/bin/Debug/Unity.Cecil.Mdb.dll
+/Users/camilledahdah/Desktop/Bat EDITOR 2.5 2017/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/camilledahdah/Desktop/Bat EDITOR 2.5 2017/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb

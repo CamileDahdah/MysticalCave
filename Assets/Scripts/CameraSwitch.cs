@@ -35,7 +35,7 @@ public class CameraSwitch : MonoBehaviour
 
     }
 
-	public void SwitchToMainCamera(GameObject secondCamera){		
+	public void SwitchToMainCamera(GameObject secondCamera){	
 		
 			secondCamera.SetActive(false);
 			mainCamera.transform.parent.position = secondCamera.transform.position;

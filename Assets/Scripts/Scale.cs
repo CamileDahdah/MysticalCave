@@ -69,6 +69,7 @@ public class Scale : MonoBehaviour {
       //  shapeModulesSparkle.radius *= 2 * scale;
 
     }
+
     void Start() {
 
         cameraPosition.distanceY *= scale;

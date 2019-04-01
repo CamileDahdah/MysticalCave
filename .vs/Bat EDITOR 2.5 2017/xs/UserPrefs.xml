@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{C756123C-F0A7-73D0-F01A-EE5D09B8BBDD}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LoadingPanel.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Tutorial.cs" Line="29" Column="4" />
+      <File FileName="Assets/Scripts/TouchManager.cs" Line="9" Column="5" />
+      <File FileName="Assets/Scripts/Menu.cs" Line="18" Column="12" />
+      <File FileName="Assets/Scripts/Charbz Scripts/GameManager.cs" Line="142" Column="65" />
+      <File FileName="Assets/LoadingPanel.cs" Line="29" Column="48" />
+      <File FileName="Assets/Scripts/RandomBloodJars.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AnimatePortal.cs" Line="37" Column="3" />
+      <File FileName="Assets/Scripts/Scale.cs" Line="36" Column="2" />
+      <File FileName="Assets/Scripts/SceneManagerCharbz.cs" Line="20" Column="1" />
+      <File FileName="Assets/Scripts/Activation.cs" Line="45" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

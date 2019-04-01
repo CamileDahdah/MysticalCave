@@ -1,55 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-public class ActiveSkill : MonoBehaviour
-{
-    private Image[] activeButtons;
-    int size;
 
-    void Awake()
-    {
+public class ActiveSkill : MonoBehaviour{
+	
+    int maxSkill;
+	public Image filledImage;
 
-        activeButtons = GetComponentsInChildren<Image>();
-        size = activeButtons.Length;
+    void Awake(){
+
+		maxSkill = SkillComponents.MAX_UPGRADES;
     }
 
 
-    public void SetActiveButton(int number)
-    {
+	public void SetActiveButton(int skillNum){
+		filledImage.fillAmount = (float) (skillNum) / SkillComponents.MAX_UPGRADES;
 
-
-        activeButtons[number + 1].enabled = true;
-
-    }
-
-    public void SetDisactiveButton(int number)
-    {
-
-        activeButtons[number + 1].enabled = false;
-
-    }
-    public void ResetActiveButtons()
-    {
-
-        for (int i = 1; i < size; i++)
-        {
-
-            activeButtons[i].enabled = false;
-
-
-
-        }
-    }
-    public void SetActiveButtons(int number)
-    {
-
-        for (int i = 1; i <= number; i++)
-        {
-
-            activeButtons[i].enabled = true;
-
-
-
-        }
-    }
+	}
 
 }

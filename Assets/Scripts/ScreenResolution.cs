@@ -14,15 +14,15 @@ public class ScreenResolution : MonoBehaviour {
 	public GameObject applyButton;
 	public GameObject menuButton;
 
-	int[][] resolutions2D = {
-		new int[]{ 960, 540 },
-		new int[]{ 1280, 720 },
-		new int[]{ 1920, 1080 },
-		new int[]{ 2560, 1440 }
-	};
+//	int[][] resolutions2D = {
+//		new int[]{ 960, 540 },
+//		new int[]{ 1280, 720 },
+//		new int[]{ 1920, 1080 },
+//		new int[]{ 2560, 1440 }
+//	};
 
 
-	public enum resolutionEnum 
+	public enum qualityEnum 
 	{
 		
 		 full = 3,  high = 2 , medium = 1 , low = 0 
@@ -32,14 +32,14 @@ public class ScreenResolution : MonoBehaviour {
 	void Awake(){
 
 
-		int index = (int) resolutionEnum.low;
+		int index = (int) qualityEnum.low;
 
 		foreach(GameObject button in resolutionButtons){
-
+			
 			int current = index++;
 
 			button.GetComponent<Button> ().onClick.AddListener (delegate() {
-				SetResolution ( current );
+				SetQuality (current);
 
 			});
 
@@ -58,22 +58,22 @@ public class ScreenResolution : MonoBehaviour {
 
 	void OnEnable(){
 		
-		selectedIndex = PlayerPrefs.GetInt("screenResolution", (int) resolutionEnum.full);
+		selectedIndex = PlayerPrefs.GetInt("qualitySettings", (int) qualityEnum.high);
 
 		firstIndex = selectedIndex;
 
-		SetResolution ( selectedIndex );
+		SetQuality (selectedIndex);
 
 	}
 
 
-	public void SetResolution(int newIndex) {
+	public void SetQuality(int newIndex) {
 	
 
 			DeslectButton (selectedIndex);
 			SelectButton (newIndex);
-
-			Screen.SetResolution (resolutions2D [newIndex] [0], resolutions2D [newIndex] [1], true);
+			QualitySettings.SetQualityLevel (newIndex);
+			//Screen.SetResolution (resolutions2D [newIndex] [0], resolutions2D [newIndex] [1], true);
 
 			selectedIndex = newIndex;
 
@@ -97,7 +97,7 @@ public class ScreenResolution : MonoBehaviour {
 
 	void ApplyChanges(){
 		
-		PlayerPrefs.SetInt("screenResolution", selectedIndex);
+		PlayerPrefs.SetInt("qualitySettings", selectedIndex);
 		PlayerPrefs.Save ();
 		Menu.instance.HomeButtonClick ();
 
@@ -106,7 +106,7 @@ public class ScreenResolution : MonoBehaviour {
 	void GoToMainMenu (){
 
 		Menu.instance.SettingsToMenu ();
-		SetResolution (firstIndex);
+		SetQuality (firstIndex);
 
 	}
 

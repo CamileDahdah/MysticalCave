@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 451c8e1b1a82f46ac83044021c3d7a3e
+timeCreated: 1528373665
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Overdose Sunrise
+  fontNames:
+  - Overdose Sunrise
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

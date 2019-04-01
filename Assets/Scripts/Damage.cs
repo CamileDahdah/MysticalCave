@@ -2,8 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Damage : MonoBehaviour
-{
+public class Damage : MonoBehaviour{
     
     PlayerHealth playerHealth;
 	GameObject bat, bloodCopy;
@@ -21,8 +20,8 @@ public class Damage : MonoBehaviour
 	Vector3 normalVector;
 	public VampireBat vampireBat;
 
-    void Start()
-    {
+    void Start(){
+		
         bat = GameObject.FindGameObjectWithTag("Player");
         playerHealth = bat.GetComponent<PlayerHealth>();
         batRb = bat.GetComponent<Rigidbody>();
@@ -38,8 +37,8 @@ public class Damage : MonoBehaviour
 		isActive = true;
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
+    void OnCollisionEnter(Collision collision){
+		
 		if (!playerHealth.isDead) {
 			if (collision.gameObject.tag == "Wall" && timer >= 1.5f) {
 				//No damage if licking blood from puddle and hits ground
@@ -62,14 +61,7 @@ public class Damage : MonoBehaviour
 			} 
 		}
     }
-	/*void OnTriggerEnter(Collider collider){
 
-		if (collider.gameObject.tag == "Death" && !playerHealth.isDead) {
-
-			playerHealth.TakeDamage (9999999);
-			//StartCoroutine (InstantiateBloodFx (c));
-		}
-	}*/
 
 	public void OverHeadAnim(Collision collision){
 		if (!playerHealth.isDead) {
@@ -87,7 +79,7 @@ public class Damage : MonoBehaviour
 			if (collision != null) {
 				c = collision.contacts [0];
 				normalVector = c.normal;
-				batRb.AddForce (normalVector.normalized * force);
+				batRb.AddForce (normalVector.normalized * force * 2f);
 			}
 
 			StartCoroutine (WaitForConstraints ());
@@ -102,17 +94,14 @@ public class Damage : MonoBehaviour
 
 
 	}
-    void Update()
-    {
+
+    void Update(){
 
         timer += Time.deltaTime;
     }
 
 
-
-
-    IEnumerator WaitForConstraints()
-    {
+    IEnumerator WaitForConstraints(){
       
         yield return new WaitForSeconds(.06f);
 		//FREEZE
@@ -127,8 +116,7 @@ public class Damage : MonoBehaviour
 
     }
 
-	IEnumerator InstantiateBloodFx(ContactPoint c)
-	{
+	IEnumerator InstantiateBloodFx(ContactPoint c){
 		
 		yield return new WaitForSeconds (.1f);
 		bloodFx.SetActive (true);

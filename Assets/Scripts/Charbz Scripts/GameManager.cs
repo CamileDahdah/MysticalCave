@@ -17,12 +17,10 @@ public class GameManager : MonoBehaviour
     private static GameManager instance = null;
     public static int currentLevel;
     public static int normalWave, lightWave, bounceWave, attackWave;
-    public Texture2D emptyProgressBar; // Set this in inspector.
-    public Texture2D fullProgressBar; // Set this in inspector.
-    private AsyncOperation async = null; // When assigned, load is in progress.
+    public AsyncOperation async = null; // When assigned, load is in progress.
     static string mysticalCave = "mysticalCave.sqlite";
     public static int health;
-    public static int numLevels=12;
+    public static int numLevels = 12;
     public LevelManager levelManager;
     public static string connectionString = "";
     static string dbPath = "";
@@ -31,6 +29,7 @@ public class GameManager : MonoBehaviour
     int width = 100;
     public static String lastLevel ;
 	private List <int> notActiveRoomsList = new List<int>();
+    public GameObject loadingPanel;
 
     public static GameManager Instance{
 
@@ -43,6 +42,7 @@ public class GameManager : MonoBehaviour
         set { }
 
     }
+
     void Awake(){
 
 		Application.targetFrameRate = 60;
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         if (instance != null)
         {
             instance.async = null;
-            instance.StopCoroutine(LoadALevel(name));
+           //LoadALevel(name);
         }
        
         InitializeWaves();
@@ -136,22 +136,17 @@ public class GameManager : MonoBehaviour
 		SceneManager.sceneLoaded -= OnLoadLevel;
 	}
 
-    void OnGUI(){
+    private IEnumerator LoadALevel(string levelName){
 
-        if (instance !=null && instance.async != null)
-        {
-
-            GUI.DrawTexture(new Rect(Screen.width / 2 - width / 2, Screen.height / 2 - height / 2, width, height), emptyProgressBar);
-            GUI.DrawTexture(new Rect(Screen.width / 2 - width / 2, Screen.height / 2 - height / 2, width * instance.async.progress, height), fullProgressBar);
-        }
+        StartLoading();
+        instance.async = SceneManager.LoadSceneAsync(levelName);
+        yield return null;
 
     }
 
-    private IEnumerator LoadALevel(string levelName){
+    public void StartLoading(){
 
-        instance.async = SceneManager.LoadSceneAsync(levelName);
-
-        yield return instance.async;
+        loadingPanel.SetActive(true);
 
     }
 
@@ -160,7 +155,8 @@ public class GameManager : MonoBehaviour
         lastLevel = SceneManager.GetActiveScene().name;
 
         SaveMenu.SetOpenMenu();
-        instance.StartCoroutine(LoadALevel(level));
+
+        StartCoroutine(LoadALevel(level));
 
     }
 
@@ -252,14 +248,15 @@ public class GameManager : MonoBehaviour
 				String level = "Level" + currentLevel;
 
 				if (currentLevel < numLevels + 1) {
-					instance.StartCoroutine (LoadALevel (level));
-				}
+                    StartCoroutine(LoadALevel(level));
+            }
 				else {
 
 				}
 			}
 
     }
+
     void InitializeWaves(){
 
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))

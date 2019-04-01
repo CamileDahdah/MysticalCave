@@ -56,6 +56,7 @@
      <None Include="Assets\Scripts\Gem.shader" />
      <None Include="Assets\Draw Call Minimizer\Example\ReadMe.txt" />
      <None Include="Assets\Mirza Beig\Shaders\Particles\Distortion\Distortion-Alpha.shader" />
+     <None Include="Assets\Resources\Tutorial\Level1.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

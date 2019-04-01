@@ -6,13 +6,17 @@ public class RocksFallingEndAnim : MonoBehaviour {
 
 	public GameObject camera;
 	public static RocksFallingEndAnim instance;
+	Animator animator;
 
 	void Awake(){
+		
 		if (instance == null) {
 			instance = this;
 		} else {
 			Destroy (this);
 		}
+
+		animator = GetComponent<Animator> ();
 	}
 
 	public void EndAnim(){
@@ -23,5 +27,10 @@ public class RocksFallingEndAnim : MonoBehaviour {
 	void EndAnimWait() {
 		CameraSwitch.instance.SwitchToMainCamera (camera);
 		Reset.instance.EnableEveryUI ();
+	}
+
+	public void EndAnimQuick(){
+
+		animator.Play ("New State", 0, 1f);
 	}
 }

@@ -13,7 +13,7 @@ public class Menu : MonoBehaviour {
 	public Text levelText;
 	public static Menu instance;
 	public Text worldScore;
-	int num = 0;
+	//int worldScore = 0;
 
 	void Start () {
 		

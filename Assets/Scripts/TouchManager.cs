@@ -18,10 +18,11 @@ public class TouchManager : MonoBehaviour {
     }
 
     void Start () {
-		if (instance == null)
+		if (instance == null) {
 			instance = this;
-		else
+		} else {
 			Destroy (this);
+		}
 		
         id = -19;
 		eventDataCurrentPosition = new PointerEventData(null);

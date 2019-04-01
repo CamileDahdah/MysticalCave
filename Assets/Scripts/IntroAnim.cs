@@ -34,6 +34,7 @@ public class IntroAnim : MonoBehaviour {
 			if(GameObject.FindGameObjectWithTag ("IntroCollider"))
 			introCollider = GameObject.FindGameObjectWithTag ("IntroCollider").GetComponent<BoxCollider> ();
 		}
+
 		if (!spawnPoint) {
 			spawnPoint = GameObject.FindGameObjectWithTag ("SpawnPoint").transform;
 		}
@@ -47,10 +48,7 @@ public class IntroAnim : MonoBehaviour {
 				StartCoroutine ("AnimatePortal");
 			}
 		}
-		else {
-			//GetComponent<Animator> ().enabled = true;
-		}
-	
+
 		bat.GetComponent<PlayerHealth> ().enabled = false;
 		foreach (BoxCollider box in bat.GetComponents<BoxCollider>()) {
 			box.enabled = false;
@@ -61,14 +59,13 @@ public class IntroAnim : MonoBehaviour {
 		timeElapsed = 0;
 		timer = 0;
 		if(LevelManager.levelID != 1){
-	    Spawn ();
+	    	Spawn ();
 		}
 
 	}
 
 	IEnumerator AnimatePortal(){
 
-		Debug.Log ("?");
 		yield return new WaitForSeconds (2.3f);
 
 		bat.transform.position = spawnPoint.GetChild (0).position;
@@ -96,7 +93,7 @@ public class IntroAnim : MonoBehaviour {
 
 	public void Spawn(){
 
-			StartCoroutine ("WaitSpawn");
+		StartCoroutine ("WaitSpawn");
 	}
 
 	public void EndSound(){
@@ -107,7 +104,7 @@ public class IntroAnim : MonoBehaviour {
 
 	IEnumerator EndIntroAnim(){
 		
-		yield return new WaitForSeconds (.5f);
+		yield return null;
 
 		if (HUDCanvas) {
 			HUDCanvas.SetActive (true);
@@ -125,7 +122,6 @@ public class IntroAnim : MonoBehaviour {
 		
 	IEnumerator WaitSpawn(){
 		
-		//if (LevelManager.levelID != 1) {
 			yield return new WaitForSeconds (5f);
 
 			CameraSwitch.instance.SwitchToMainCamera (introCamera);
@@ -137,9 +133,7 @@ public class IntroAnim : MonoBehaviour {
 			}
 
 			bat.GetComponent<PlayerHealth> ().enabled = true;
-			StartCoroutine ("EndIntroAnim");
-		//} 
-		
+			StartCoroutine ("EndIntroAnim");	
 	
 	}
 		

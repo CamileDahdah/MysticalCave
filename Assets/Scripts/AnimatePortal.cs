@@ -13,6 +13,7 @@ public class AnimatePortal : MonoBehaviour {
 
 
 	void Start () {
+
 		GetComponent<AudioSource> ().PlayDelayed (1f);
 		foreach (ParticleSystem p in transform.GetComponentsInChildren<ParticleSystem>()) {
 			listParticle.Add (p);
